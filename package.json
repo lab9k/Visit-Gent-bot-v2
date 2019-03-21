@@ -29,15 +29,15 @@
     "querystring": "^0.2.0",
     "replace": "^1.1.0",
     "restify": "^7.7.0",
-    "typescript": "^3.3.3333"
+    "typescript": "^3.3.4000"
   },
   "devDependencies": {
     "@types/dotenv": "^6.1.0",
     "@types/download": "^6.2.4",
     "@types/form-data": "^2.2.1",
     "@types/lodash": "^4.14.123",
-    "@types/node-fetch": "^2.1.6",
-    "@types/restify": "^7.2.8",
+    "@types/node-fetch": "^2.1.7",
+    "@types/restify": "^7.2.9",
     "nodemon": "^1.18.10",
     "prettier-tslint": "^0.4.2",
     "tslint": "^5.14.0",
