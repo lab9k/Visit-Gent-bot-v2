@@ -16,6 +16,7 @@ import { FeedbackTypes } from '../models/FeedbackTypes';
 import { map, sortBy, take } from 'lodash';
 import FeedbackPrompt from './FeedbackPrompt';
 import lang from '../lang';
+import conceptMapping from '../lang/conceptMapping';
 
 import QueryResponse from '../models/QueryResponse';
 import CorrectConceptPrompt from './CorrectConceptPrompt';
@@ -73,14 +74,7 @@ export default class QuestionDialog extends WaterfallDialog {
 
     await this.waitFor(sctx, async () => {
       const formatConcepts = (conceptsArray: string[]) =>
-        conceptsArray
-          .map(concept =>
-            concept
-              .toLowerCase()
-              .split('_')
-              .join(' '),
-          )
-          .join(', ');
+        conceptsArray.map(concept => conceptMapping(concept)).join(', ');
       await sctx.prompt(CorrectConceptPrompt.ID, {
         prompt: lang
           .getStringFor(lang.ASK_CORRECT_CONCEPTS)
