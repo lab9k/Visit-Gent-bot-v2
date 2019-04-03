@@ -33,10 +33,7 @@ export default class CitynetApi {
         }),
       },
     )
-      .then(res => {
-        console.log(res.headers);
-        return res.json();
-      })
+      .then(res => res.json())
       .then(json => {
         const ret = <QueryResponse>json;
         ret.query = question;
@@ -70,7 +67,6 @@ export default class CitynetApi {
   }
 
   public async login(): Promise<{ value: string; date: string }> {
-    console.log('logging in');
     if (!this.isTokenValid()) {
       const params = new URLSearchParams();
       params.append('login', this.getCredentials().login);

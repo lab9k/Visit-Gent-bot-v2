@@ -287,7 +287,6 @@ export default class QuestionDialog extends WaterfallDialog {
         'downloads',
         ret.filename,
       );
-      console.log(filePath);
       const fd = new FormData();
       fd.append('file', ret.buffer, {
         filename: ret.filename,
@@ -299,7 +298,6 @@ export default class QuestionDialog extends WaterfallDialog {
       })
         .then(async res => res.json())
         .then(async res => {
-          console.log(res);
           await dialogContext.context.sendActivity(
             'Ik stuur je de downloadlink onmiddelijk door.',
           );

@@ -16,7 +16,6 @@ export default class AirtableApi {
     document: string;
     sessionid: string;
   }): Promise<any> {
-    console.log(options);
     return this.base('Sessions').create(
       {
         sessionid: options.sessionid,
@@ -32,7 +31,7 @@ export default class AirtableApi {
           return;
         }
         console.log('airtable record successfully created');
-        console.log(record.getId());
+        console.log(`airtable record id: ${record.getId()}`);
       },
     );
   }

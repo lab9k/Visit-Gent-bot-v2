@@ -115,7 +115,6 @@ export class CityBot {
             sessionid: payload.value.sessionid,
           });
         } else if (payload.type === 'download') {
-          console.log('detected download button click');
           await this.questionDialog.sendFile(dialogContext, payload.value.uuid);
           await dialogContext.repromptDialog();
         } else if (dialogContext.context.activity.text) {
