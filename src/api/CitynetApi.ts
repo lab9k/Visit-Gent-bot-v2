@@ -37,7 +37,11 @@ export default class CitynetApi {
         console.log(res.headers);
         return res.json();
       })
-      .then(json => <QueryResponse>json)
+      .then(json => {
+        const ret = <QueryResponse>json;
+        ret.query = question;
+        return ret;
+      })
       .catch(err => {
         throw err;
       });

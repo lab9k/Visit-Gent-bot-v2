@@ -67,10 +67,6 @@ export default new class {
     default: [],
   };
 
-  // private get data() {
-  //   return <any>data;
-  // }
-
   getStringFor(key: string): string {
     return sample(this.options[key] || this.options.default);
   }

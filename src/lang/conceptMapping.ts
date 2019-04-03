@@ -1,3 +1,15 @@
+export default function getTranslation(key: string): string {
+  return (
+    mapping[key] ||
+    `${key
+      .replace('LEGAL_', '')
+      .replace('Legal_', '')
+      .split('_')
+      .join(' ')
+      .toLowerCase()}`
+  );
+}
+
 const mapping = {
   LEGAL_Mobility: 'Mobiliteit',
   LEGAL_Domain_Mobility: 'Mobiliteit',
@@ -254,15 +266,3 @@ const mapping = {
   LEGAL_Military_Service: 'Tegen herinvoering van de dienstplicht',
   LEGAL_Criminality_Prevention: 'Criminaliteitspreventie',
 };
-
-export default function getTranslation(key: string): string {
-  return (
-    mapping[key] ||
-    `${key
-      .replace('LEGAL_', '')
-      .replace('Legal_', '')
-      .split('_')
-      .join(' ')
-      .toLowerCase()}`
-  );
-}

@@ -5,12 +5,13 @@ import {
   UserState,
   StatePropertyAccessor,
 } from 'botbuilder';
-import { DialogSet, ConfirmPrompt, ChoicePrompt } from 'botbuilder-dialogs';
+import { DialogSet, ChoicePrompt } from 'botbuilder-dialogs';
 import QuestionDialog from './dialogs/QuestionDialog';
 import FeedbackPrompt from './dialogs/FeedbackPrompt';
 import lang from './lang';
 import CorrectConceptPrompt from './dialogs/CorrectConceptPrompt';
 import { ChannelId } from './models/ChannelIds';
+import AirtableApi from './api/AirtableApi';
 
 const DIALOG_STATE_PROPERTY = 'dialog_state_prop';
 export class CityBot {
@@ -72,8 +73,26 @@ export class CityBot {
           const payload = JSON.parse(
             dialogContext.context.activity.channelData.postback.payload,
           );
-          await this.questionDialog.sendFile(dialogContext, payload);
-          await dialogContext.repromptDialog();
+
+          if (payload.type === 'feedback') {
+            await dialogContext.context.sendActivity(
+              `Merci voor de feedback: ${payload.value.state} op document: ${
+                payload.value.uuid
+              } en sessionId: ${payload.value.sessionid}`,
+            );
+            const airtableAPI = new AirtableApi();
+            airtableAPI.addLine({
+              document: payload.value.uuid,
+              feedback: payload.value.state,
+              question: payload.value.query,
+              sessionid: payload.value.sessionid,
+            });
+          } else if (payload.type === 'download') {
+            await this.questionDialog.sendFile(dialogContext, payload);
+            await dialogContext.repromptDialog();
+          } else if (dialogContext.context.activity.text) {
+            await dialogContext.continueDialog();
+          }
         } else {
           // ? message or quick reply
           await dialogContext.continueDialog();
@@ -81,10 +100,23 @@ export class CityBot {
         await dialogContext.continueDialog();
         break;
       default:
-        if (dialogContext.context.activity.value) {
-          console.log('detected button click');
-          const payload = dialogContext.context.activity.value;
-          await this.questionDialog.sendFile(dialogContext, payload);
+        const payload = JSON.parse(dialogContext.context.activity.value || '{}');
+        if (payload.type === 'feedback') {
+          await dialogContext.context.sendActivity(
+            `Merci voor de feedback: ${payload.value.state} op document: ${
+              payload.value.uuid
+            } en sessionId: ${payload.value.sessionid}`,
+          );
+          const airtableApi = new AirtableApi();
+          airtableApi.addLine({
+            document: payload.value.uuid,
+            feedback: payload.value.state,
+            question: payload.value.query,
+            sessionid: payload.value.sessionid,
+          });
+        } else if (payload.type === 'download') {
+          console.log('detected download button click');
+          await this.questionDialog.sendFile(dialogContext, payload.value.uuid);
           await dialogContext.repromptDialog();
         } else if (dialogContext.context.activity.text) {
           await dialogContext.continueDialog();

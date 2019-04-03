@@ -23,4 +23,5 @@ export interface Document {
 export default interface QueryResponse {
   documents: Document[];
   conceptsOfQuery: string[];
+  query?: string;
 }
