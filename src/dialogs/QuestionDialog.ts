@@ -9,11 +9,10 @@ import {
   CardFactory,
   UserState,
   StatePropertyAccessor,
-  ActionTypes,
 } from 'botbuilder';
 import CitynetApi from '../api/CitynetApi';
 import { FeedbackTypes } from '../models/FeedbackTypes';
-import { map, sortBy, take } from 'lodash';
+import { map, take } from 'lodash';
 import FeedbackPrompt from './FeedbackPrompt';
 import lang from '../lang';
 import conceptMapping from '../lang/conceptMapping';
@@ -48,7 +47,9 @@ export default class QuestionDialog extends WaterfallDialog {
     // ? Send the documents
     await sctx.context.sendActivity(lang.getStringFor(lang.WAIT_WHILE_FETCH));
 
-    await sctx.context.sendActivity({ type: ActivityTypes.Typing });
+    await sctx.context.sendActivity({
+      type: ActivityTypes.Typing,
+    });
     const resolved: QueryResponse = await this.api.query(
       sctx.context.activity.text,
     );
@@ -89,21 +90,6 @@ export default class QuestionDialog extends WaterfallDialog {
     if (answer === ConfirmTypes.POSITIVE || skipped) {
       const resolved: QueryResponse = await this.docsAccessor.get(sctx.context);
       if (sctx.context.activity.channelId === ChannelId.Facebook) {
-        // const fbCardBuilder = new FacebookCardBuilder();
-        // resolved.documents.forEach((doc, i) =>
-        //   fbCardBuilder.addCard(
-        //     new FacebookCard(
-        //       `Document ${i}`,
-        //       `${take(doc.summary.split(' '), 50).join(' ')}...`,
-        //       {
-        //         type: 'postback',
-        //         title: 'Download pdf',
-        //         payload: JSON.stringify({ content: doc.resourceURI }),
-        //       },
-        //     ),
-        //   ),
-        // );
-        // await sctx.context.sendActivity(fbCardBuilder.getData());
         const fbCardBuilder = new FacebookCardBuilder();
         resolved.documents.forEach((doc, i) =>
           fbCardBuilder.addCard(
@@ -120,55 +106,11 @@ export default class QuestionDialog extends WaterfallDialog {
                   },
                 }),
               },
-              {
-                type: 'postback',
-                title: 'Nuttig',
-                payload: JSON.stringify({
-                  type: 'feedback',
-                  value: {
-                    uuid: doc.resourceURI,
-                    state: true,
-                    sessionid: null,
-                    query: resolved.query,
-                  },
-                }),
-              },
-              {
-                type: 'postback',
-                title: 'Niet Nuttig',
-                payload: JSON.stringify({
-                  type: 'feedback',
-                  value: {
-                    uuid: doc.resourceURI,
-                    state: false,
-                    sessionid: null,
-                    query: resolved.query,
-                  },
-                }),
-              },
             ),
           ),
         );
         await sctx.context.sendActivity(fbCardBuilder.getData());
       } else {
-        // const cards = map(
-        //   sortBy(resolved.documents, 'scoreInPercent').reverse(),
-        //   document => {
-        //     return CardFactory.heroCard(
-        //       `${take(document.content.split(' '), 5).join(' ')}...`,
-        //       `${take(document.content.split(' '), 20).join(' ')}...`,
-        //       [],
-        //       [
-        //         {
-        //           value: { content: document.resourceURI },
-        //           type: ActionTypes.PostBack,
-        //           title: 'download document',
-        //         },
-        //       ],
-        //     );
-        //   },
-        // );
-        // await sctx.context.sendActivity(MessageFactory.carousel(cards));
         const cards = map(resolved.documents, document => {
           return CardFactory.heroCard(
             `${take(document.content.split(' '), 5).join(' ')}...`,
@@ -185,66 +127,34 @@ export default class QuestionDialog extends WaterfallDialog {
                   },
                 }),
               },
-              {
-                type: 'messageBack',
-                title: 'Nuttig',
-                value: JSON.stringify({
-                  type: 'feedback',
-                  value: {
-                    uuid: document.resourceURI,
-                    state: true,
-                    sessionid: null,
-                    query: resolved.query,
-                  },
-                }),
-              },
-              {
-                type: 'messageBack',
-                title: 'Niet Nuttig',
-                value: JSON.stringify({
-                  type: 'feedback',
-                  value: {
-                    uuid: document.resourceURI,
-                    state: false,
-                    sessionid: null,
-                    query: resolved.query,
-                  },
-                }),
-              },
             ],
           );
         });
         await sctx.context.sendActivity(MessageFactory.carousel(cards));
       }
-      // await this.waitFor(sctx, async () => {
-      //   await sctx.prompt(FeedbackPrompt.ID, {
-      //     prompt: lang.getStringFor(lang.USEFULLNESS_QUERY),
-      //     retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
-      //   });
-      // });
     } else if (answer === ConfirmTypes.NEGATIVE) {
       await sctx.context.sendActivity(lang.getStringFor(lang.REPHRASE));
       await sctx.endDialog();
     }
   }
 
-  private async handleFeedback(sctx: WaterfallStepContext) {
-    const answer = sctx.context.activity.text;
-    if (answer === FeedbackTypes.GOOD) {
-      await sctx.context.sendActivity(lang.getStringFor(lang.THANK_FEEDBACK));
-      await this.waitFor(sctx, async () => {
-        await sctx.context.sendActivity(lang.getStringFor(lang.MORE_QUESTIONS));
-      });
-      await sctx.endDialog();
-    }
-    if (answer === FeedbackTypes.BAD) {
-      await sctx.prompt('confirm_prompt', {
-        prompt: lang.getStringFor(lang.REAL_PERSON),
-        retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
-        choices: [lang.POSITIVE, lang.NEGATIVE],
-      });
-    }
-  }
+  // private async handleFeedback(sctx: WaterfallStepContext) {
+  //   const answer = sctx.context.activity.text;
+  //   if (answer === FeedbackTypes.GOOD) {
+  //     await sctx.context.sendActivity(lang.getStringFor(lang.THANK_FEEDBACK));
+  //     await this.waitFor(sctx, async () => {
+  //       await sctx.context.sendActivity(lang.getStringFor(lang.MORE_QUESTIONS));
+  //     });
+  //     await sctx.endDialog();
+  //   }
+  //   if (answer === FeedbackTypes.BAD) {
+  //     await sctx.prompt('confirm_prompt', {
+  //       prompt: lang.getStringFor(lang.REAL_PERSON),
+  //       retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
+  //       choices: [lang.POSITIVE, lang.NEGATIVE],
+  //     });
+  //   }
+  // }
 
   public async askFeedback(sctx: DialogContext): Promise<any> {
     await this.waitFor(sctx, async () => {
@@ -255,16 +165,16 @@ export default class QuestionDialog extends WaterfallDialog {
     });
   }
 
-  private async handlePersonRequest(sctx: WaterfallStepContext) {
-    if (
-      sctx.context.activity.text.toUpperCase() === lang.POSITIVE.toUpperCase()
-    ) {
-      await sctx.context.sendActivity(lang.getStringFor(lang.EMAIL_SENT));
-    } else {
-      await sctx.context.sendActivity(lang.getStringFor(lang.MORE_QUESTIONS));
-    }
-    await sctx.endDialog();
-  }
+  // private async handlePersonRequest(sctx: WaterfallStepContext) {
+  //   if (
+  //     sctx.context.activity.text.toUpperCase() === lang.POSITIVE.toUpperCase()
+  //   ) {
+  //     await sctx.context.sendActivity(lang.getStringFor(lang.EMAIL_SENT));
+  //   } else {
+  //     await sctx.context.sendActivity(lang.getStringFor(lang.MORE_QUESTIONS));
+  //   }
+  //   await sctx.endDialog();
+  // }
 
   public async sendFile(
     dialogContext: DialogContext,
@@ -321,7 +231,9 @@ export default class QuestionDialog extends WaterfallDialog {
   }
 
   private async waitFor(sctx: DialogContext, cb: Function): Promise<any> {
-    await sctx.context.sendActivity({ type: ActivityTypes.Typing });
+    await sctx.context.sendActivity({
+      type: ActivityTypes.Typing,
+    });
     return new Promise(resolve => {
       // wait 1 to 2 secs for natural feeling
       setTimeout(() => {
