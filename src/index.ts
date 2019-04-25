@@ -115,7 +115,7 @@ const userState = new UserState(memoryStorage);
 // });
 // conversationState = new ConversationState(blobStorage);
 
-// Create the EchoBot.
+// Create the Citybot.
 const bot = new CityBot(conversationState, userState);
 
 // Create HTTP server

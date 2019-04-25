@@ -11,7 +11,6 @@ import {
   StatePropertyAccessor,
 } from 'botbuilder';
 import CitynetApi from '../api/CitynetApi';
-import { FeedbackTypes } from '../models/FeedbackTypes';
 import { map, take } from 'lodash';
 import FeedbackPrompt from './FeedbackPrompt';
 import lang from '../lang';
@@ -25,7 +24,6 @@ import { ChannelId } from '../models/ChannelIds';
 import { FacebookCardBuilder, FacebookCard } from '../models/FacebookCard';
 import nodeFetch from 'node-fetch';
 import * as FormData from 'form-data';
-import * as path from 'path';
 
 export default class QuestionDialog extends WaterfallDialog {
   public static readonly ID = 'question_dialog';
@@ -190,13 +188,13 @@ export default class QuestionDialog extends WaterfallDialog {
 
     // TODO: split fb and other channels
     if (dialogContext.context.activity.channelId === ChannelId.Facebook) {
-      const filePath = path.resolve(
-        __dirname,
-        '..',
-        '..',
-        'downloads',
-        ret.filename,
-      );
+      // const filePath = path.resolve(
+      //   __dirname,
+      //   '..',
+      //   '..',
+      //   'downloads',
+      //   ret.filename,
+      // );
       const fd = new FormData();
       fd.append('file', ret.buffer, {
         filename: ret.filename,
