@@ -130,31 +130,6 @@ server.post('/api/messages', (req, res) => {
   });
 });
 
-server.get('/api/messages', (req, res, next) => {
-  // Your verify token. Should be a random string.
-  const VERIFY_TOKEN = 'test';
-
-  // Parse the query params
-  const mode = req.query['hub.mode'];
-  const token = req.query['hub.verify_token'];
-  const challenge = req.query['hub.challenge'];
-
-  // Checks if a token and mode is in the query string of the request
-  if (mode && token) {
-    // Checks the mode and token sent is correct
-    if (mode === 'subscribe' && token === VERIFY_TOKEN) {
-      // Responds with the challenge token from the request
-      console.log('WEBHOOK_VERIFIED');
-      res.sendRaw(200, challenge);
-      next();
-    } else {
-      // Responds with '403 Forbidden' if verify tokens do not match
-      res.status(403);
-      next();
-    }
-  }
-});
-
 server.listen(process.env.port || process.env.PORT || 3978, () => {
   console.log(`\n${server.name} listening to ${server.url}`);
   console.log(

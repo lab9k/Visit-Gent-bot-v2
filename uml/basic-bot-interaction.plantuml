@@ -7,18 +7,33 @@ actor employee order 40
 participant bot order 20
 participant "citynet api" as ca order 30
 
-person -> bot : question
-bot -> ca ++: dispatch question
-ca -> bot -- : documents
-bot -> person : response
-alt good response
-    person -> bot : Finish / silent
-    bot -> person : Thank you for using
-else bad response
-    person -> bot : request service employee
-    bot -> employee ++: email
-    bot -> person : help is on the way
-    ...Some time later...
-    employee -> person --: help
+person -> bot : CITYBOT
+bot -> person : Hallo...
+bot -> person : privacy info
+bot -> person : proberen?
+alt ja
+    bot -> person : wil je een voorbeeldvraag?
+    alt ja
+        bot -> person : Waar kan ik mijn woonwagen parkeren? 
+        person -> bot : [button] ok bedankt
+        bot -> person : stel gerust je vraag
+    else nee
+        bot -> person : Ga je gang
+    end
+    bot -> person : stel je vraag
+    person -> bot : vraag
+    bot -> ca ++: dispatch question
+    ca -> bot --: documents
+    bot -> person: zijn dit de juiste concepten?
+    alt ja
+        bot -> person : documents
+        bot -> person: indien je nog een vraag hebt, stuur CITYBOT
+    else nee 
+        bot -> person : stel je vraag opnieuw
+    end
+else neen
+    bot -> person : geen probleem
+else medewerker
+    bot -> person : een mederwerker komt hierop terug
 end
 @enduml
