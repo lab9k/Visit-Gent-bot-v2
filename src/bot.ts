@@ -88,7 +88,10 @@ export class CityBot {
               sessionid: payload.value.sessionid,
             });
           } else if (payload.type === 'download') {
-            await this.questionDialog.sendFile(dialogContext, payload);
+            await this.questionDialog.sendFile(
+              dialogContext,
+              payload.value.uuid,
+            );
             await dialogContext.repromptDialog();
           } else if (dialogContext.context.activity.text) {
             await dialogContext.continueDialog();
@@ -100,7 +103,9 @@ export class CityBot {
         await dialogContext.continueDialog();
         break;
       default:
-        const payload = JSON.parse(dialogContext.context.activity.value || '{}');
+        const payload = JSON.parse(
+          dialogContext.context.activity.value || '{}',
+        );
         if (payload.type === 'feedback') {
           await dialogContext.context.sendActivity(
             `Merci voor de feedback: ${payload.value.state} op document: ${
