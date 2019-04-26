@@ -95,6 +95,9 @@ export class CityBot {
           )
         ) {
           // ? postback button clicked
+          console.log(
+            dialogContext.context.activity.channelData.postback.payload,
+          );
           const payload = JSON.parse(
             dialogContext.context.activity.channelData.postback.payload,
           );
