@@ -188,13 +188,6 @@ export default class QuestionDialog extends WaterfallDialog {
 
     // TODO: split fb and other channels
     if (dialogContext.context.activity.channelId === ChannelId.Facebook) {
-      // const filePath = path.resolve(
-      //   __dirname,
-      //   '..',
-      //   '..',
-      //   'downloads',
-      //   ret.filename,
-      // );
       const fd = new FormData();
       fd.append('file', ret.buffer, {
         filename: ret.filename,
