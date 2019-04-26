@@ -128,7 +128,7 @@ export class CityBot {
           // ? message or quick reply
           await dialogContext.continueDialog();
         }
-        await dialogContext.continueDialog();
+        // await dialogContext.continueDialog();
         break;
       default:
         const payload = JSON.parse(
