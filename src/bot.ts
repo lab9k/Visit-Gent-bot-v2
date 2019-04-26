@@ -92,12 +92,12 @@ export class CityBot {
             dialogContext.context.activity.channelData,
             'postback',
             'payload',
-          )
+          ) &&
+          dialogContext.context.activity.channelData.postback.payload !==
+            'get_started'
         ) {
           // ? postback button clicked
-          console.log(
-            dialogContext.context.activity.channelData.postback.payload,
-          );
+
           const payload = JSON.parse(
             dialogContext.context.activity.channelData.postback.payload,
           );
