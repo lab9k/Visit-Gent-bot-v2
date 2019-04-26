@@ -41,6 +41,10 @@ export class CityBot {
   }
 
   async onTurn(turnContext: TurnContext) {
+    const dialogContext = await this.dialogs.createContext(turnContext);
+    if (dialogContext.context.activity.channelId === ChannelId.Facebook) {
+      console.log(dialogContext.context.activity.channelData);
+    }
     const options = {
       [ActivityTypes.Message]: async () => {
         await this.handleDialog(turnContext);
@@ -149,6 +153,7 @@ export class CityBot {
         ) {
           // Send a "this is what the bot does" message to this user.
           await turnContext.sendActivity(lang.getStringFor(lang.WELCOME));
+          await turnContext.sendActivity(lang.getStringFor(lang.PRIVACY_INFO));
         }
       }
     }
