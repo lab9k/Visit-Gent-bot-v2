@@ -23,6 +23,11 @@ export default new class {
       welke vraag stellen over de Besluitvorming van uw Stad of Gemeente.
       U kan op ieder moment opnieuw beginnen door 'get started' te typen`,
     ],
+    [this.PRIVACY_INFO]: [
+      'Uw vragen en privacy worden volgens GDPR wetgeving behandeld. U ' +
+        'kan zich evenwel ten alle tijde richten tot een medewerker van uw Stad of ' +
+        'Gemeente door op \'Medewerker\' te klikken.',
+    ],
     [this.WAIT_WHILE_FETCH]: [
       `Even geduld terwijl ik de juiste documenten zoek.`,
       'Ok, ik zal even gaan zoeken naar de juiste documenten.',
@@ -65,11 +70,7 @@ export default new class {
       'Kan je de vraag op een andere manier stellen zodat ik in het juiste domein ga zoeken?',
       'Gelieve de vraag iets specifieker te maken, zodat ik op de juiste plek ga zoeken',
     ],
-    [this.PRIVACY_INFO]: [
-      'Uw vragen en privacy worden volgens GDPR wetgeving behandeld. U' +
-        'kan zich evenwel ten alle tijde richten tot een medewerker van uw Stad of ' +
-        'Gemeente door op \'Medewerker\' te klikken.',
-    ],
+
     default: [],
   };
 

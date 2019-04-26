@@ -62,8 +62,8 @@ export default class QuestionDialog extends WaterfallDialog {
       await step.context.sendActivity('Stel gerust je vraag');
     } else if (step.context.activity.text === 'Medewerker') {
       await step.context.sendActivity(
-        'Uw vragen worden doorgestuurd naar een medewerker van uw stad of gemeente.' +
-          ' Prettige dag verder',
+        `Uw vragen worden doorgestuurd naar een medewerker van uw stad of gemeente.
+        Prettige dag verder`,
       );
       await step.endDialog();
     }
@@ -161,6 +161,7 @@ export default class QuestionDialog extends WaterfallDialog {
     } else if (answer === ConfirmTypes.NEGATIVE) {
       await sctx.context.sendActivity(lang.getStringFor(lang.REPHRASE));
       await sctx.endDialog();
+      await sctx.beginDialog(QuestionDialog.ID);
     }
   }
 
