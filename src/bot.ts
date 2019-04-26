@@ -62,6 +62,12 @@ export class CityBot {
     }
     const options = {
       [ActivityTypes.Message]: async () => {
+        if (
+          dialogContext.context.activity.text.toLowerCase() === 'get started'
+        ) {
+          await dialogContext.endDialog();
+          await dialogContext.beginDialog(QuestionDialog.ID);
+        }
         await this.handleDialog(turnContext);
       },
       [ActivityTypes.ConversationUpdate]: async () => {

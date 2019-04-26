@@ -48,6 +48,7 @@ export default class QuestionDialog extends WaterfallDialog {
       choices: [
         { value: ConfirmTypes.POSITIVE },
         { value: ConfirmTypes.NEGATIVE },
+        { value: 'Medewerker' },
       ],
       prompt: 'Citybot proberen?',
       retryPrompt: 'Gelieve de knoppen te gebruiken.',
@@ -57,8 +58,14 @@ export default class QuestionDialog extends WaterfallDialog {
   private async handleStart(step: WaterfallStepContext) {
     if (step.context.activity.text === ConfirmTypes.NEGATIVE) {
       await step.endDialog();
-    } else {
+    } else if (step.context.activity.text === ConfirmTypes.POSITIVE) {
       await step.context.sendActivity('Stel gerust je vraag');
+    } else if (step.context.activity.text === 'Medewerker') {
+      await step.context.sendActivity(
+        'Uw vragen worden doorgestuurd naar een medewerker van uw stad of gemeente.' +
+          ' Prettige dag verder',
+      );
+      await step.endDialog();
     }
   }
 
