@@ -34,11 +34,32 @@ export default class QuestionDialog extends WaterfallDialog {
     this.docsAccessor = userState.createProperty<QueryResponse>(
       'resolved_data',
     );
+    this.addStep(this.wantToStartQuestion.bind(this));
+    this.addStep(this.handleStart.bind(this));
     this.addStep(this.handleQuestion.bind(this));
     this.addStep(this.handleConcept.bind(this));
     // this.addStep(this.handleFeedback.bind(this));
     // this.addStep(this.handlePersonRequest.bind(this));
     this.api = new CitynetApi();
+  }
+
+  private async wantToStartQuestion(step: WaterfallStepContext) {
+    await step.prompt('confirm_prompt', {
+      choices: [
+        { value: ConfirmTypes.POSITIVE },
+        { value: ConfirmTypes.NEGATIVE },
+      ],
+      prompt: 'Citybot proberen?',
+      retryPrompt: 'Gelieve de knoppen te gebruiken.',
+    });
+  }
+
+  private async handleStart(step: WaterfallStepContext) {
+    if (step.context.activity.text === ConfirmTypes.NEGATIVE) {
+      await step.endDialog();
+    } else {
+      await step.context.sendActivity('Stel gerust je vraag');
+    }
   }
 
   private async handleQuestion(sctx: WaterfallStepContext) {

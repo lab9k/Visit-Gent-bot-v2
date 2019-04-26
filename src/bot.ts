@@ -12,6 +12,7 @@ import lang from './lang';
 import CorrectConceptPrompt from './dialogs/CorrectConceptPrompt';
 import { ChannelId } from './models/ChannelIds';
 import AirtableApi from './api/AirtableApi';
+import { ConfirmTypes } from './models/ConfirmTypes';
 
 const DIALOG_STATE_PROPERTY = 'dialog_state_prop';
 export class CityBot {
@@ -42,15 +43,35 @@ export class CityBot {
 
   async onTurn(turnContext: TurnContext) {
     const dialogContext = await this.dialogs.createContext(turnContext);
-    if (dialogContext.context.activity.channelId === ChannelId.Facebook) {
-      console.log(dialogContext.context.activity.channelData);
+    if (
+      checkNested(
+        dialogContext.context.activity.channelData,
+        'postback',
+        'payload',
+      ) &&
+      dialogContext.context.activity.channelId === ChannelId.Facebook
+    ) {
+      if (
+        dialogContext.context.activity.channelData.postback.payload ===
+        'get_started'
+      ) {
+        // user clicked get_started
+        await this.welcomeUser(turnContext);
+        await dialogContext.beginDialog(QuestionDialog.ID);
+      }
     }
     const options = {
       [ActivityTypes.Message]: async () => {
         await this.handleDialog(turnContext);
       },
       [ActivityTypes.ConversationUpdate]: async () => {
-        await this.welcomeUser(turnContext);
+        if (
+          dialogContext.context.activity.channelId !== ChannelId.Facebook &&
+          turnContext.activity.membersAdded[0].name !== 'Bot'
+        ) {
+          await this.welcomeUser(turnContext);
+          await dialogContext.beginDialog(QuestionDialog.ID);
+        }
       },
       default: () => {
         console.log('Unknown activity type, not an error');
@@ -131,31 +152,33 @@ export class CityBot {
         }
         break;
     }
-
-    // ? if no outstanding dialog / no one responded
-    if (!dialogContext.context.responded) {
-      await dialogContext.beginDialog(QuestionDialog.ID);
-    }
   }
 
   private async welcomeUser(turnContext: TurnContext) {
     // Do we have any new members added to the conversation?
-    if (turnContext.activity.membersAdded.length !== 0) {
-      // Iterate over all new members added to the conversation
-      for (const idx in turnContext.activity.membersAdded) {
-        // Greet anyone that was not the target (recipient) of this message.
-        // Since the bot is the recipient for events from the channel,
-        // context.activity.membersAdded === context.activity.recipient.Id indicates the
-        // bot was added to the conversation, and the opposite indicates this is a user.
-        if (
-          turnContext.activity.membersAdded[idx].id !==
-          turnContext.activity.recipient.id
-        ) {
-          // Send a "this is what the bot does" message to this user.
-          await turnContext.sendActivity(lang.getStringFor(lang.WELCOME));
-          await turnContext.sendActivity(lang.getStringFor(lang.PRIVACY_INFO));
+    if (turnContext.activity.channelId !== ChannelId.Facebook) {
+      if (turnContext.activity.membersAdded.length !== 0) {
+        // Iterate over all new members added to the conversation
+        for (const idx in turnContext.activity.membersAdded) {
+          // Greet anyone that was not the target (recipient) of this message.
+          // Since the bot is the recipient for events from the channel,
+          // context.activity.membersAdded === context.activity.recipient.Id indicates the
+          // bot was added to the conversation, and the opposite indicates this is a user.
+          if (
+            turnContext.activity.membersAdded[idx].id !==
+            turnContext.activity.recipient.id
+          ) {
+            // Send a "this is what the bot does" message to this user.
+            await turnContext.sendActivity(lang.getStringFor(lang.WELCOME));
+            await turnContext.sendActivity(
+              lang.getStringFor(lang.PRIVACY_INFO),
+            );
+          }
         }
       }
+    } else {
+      await turnContext.sendActivity(lang.getStringFor(lang.WELCOME));
+      await turnContext.sendActivity(lang.getStringFor(lang.PRIVACY_INFO));
     }
   }
   private async saveChanges(tc: TurnContext) {
