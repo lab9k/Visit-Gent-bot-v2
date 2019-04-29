@@ -112,7 +112,6 @@ export default class CitynetApi {
         Accept: 'application/octet-stream',
       },
     }).then(res => res.headers);
-    console.log(resourceUri);
     const contentDisposition = headers.get('content-disposition');
     const attachment = contentDisposition.split('; ');
     const filename = attachment[1].split(' = ')[1];
@@ -123,6 +122,7 @@ export default class CitynetApi {
       filename: trimmedFileName,
       headers: {
         Authorization: `Bearer ${this.token.value}`,
+        Accept: 'application/octet-stream',
       },
     };
     return {

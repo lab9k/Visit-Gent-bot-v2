@@ -19,7 +19,6 @@ import lang from '../lang';
 import conceptMapping from '../lang/conceptMapping';
 
 import QueryResponse from '../models/QueryResponse';
-import CorrectConceptPrompt from './CorrectConceptPrompt';
 import { ConfirmTypes } from '../models/ConfirmTypes';
 import { readFileSync } from 'fs';
 import { ChannelId } from '../models/ChannelIds';
@@ -245,7 +244,6 @@ export default class QuestionDialog extends WaterfallDialog {
     const filedata = readFileSync(`./downloads/${ret.filename}`);
     const base64file = Buffer.from(filedata).toString('base64');
 
-    // TODO: split fb and other channels
     if (dialogContext.context.activity.channelId === ChannelId.Facebook) {
       const fd = new FormData();
       fd.append('file', ret.buffer, {
