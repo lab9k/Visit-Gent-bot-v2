@@ -107,7 +107,10 @@ export default class CitynetApi {
 
   public async downloadFile(resourceUri: string) {
     const headers = await nodeFetch(resourceUri, {
-      headers: { Authorization: `Bearer ${this.token.value}` },
+      headers: {
+        Authorization: `Bearer ${this.token.value}`,
+        Accept: 'application/octet-stream',
+      },
     }).then(res => res.headers);
     console.log(resourceUri);
     const contentDisposition = headers.get('content-disposition');
