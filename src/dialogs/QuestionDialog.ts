@@ -137,6 +137,9 @@ export default class QuestionDialog extends WaterfallDialog {
     const answer = step.context.activity.text;
     if (answer === ConfirmTypes.POSITIVE || skipped) {
       const resolved: QueryResponse = await this.docsAccessor.get(step.context);
+      await step.context
+        .sendActivity(`Dit is de relevante info die ik heb gevonden in
+de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te drukken.`);
       if (step.context.activity.channelId === ChannelId.Facebook) {
         const fbCardBuilder = new FacebookCardBuilder();
         resolved.documents.forEach((doc, i) =>
