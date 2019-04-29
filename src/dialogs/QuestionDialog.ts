@@ -2,6 +2,7 @@ import {
   WaterfallDialog,
   WaterfallStepContext,
   DialogContext,
+  ConfirmPrompt,
 } from 'botbuilder-dialogs';
 import {
   MessageFactory,
@@ -9,6 +10,7 @@ import {
   CardFactory,
   UserState,
   StatePropertyAccessor,
+  TurnContext,
 } from 'botbuilder';
 import CitynetApi from '../api/CitynetApi';
 import { map, take } from 'lodash';
@@ -36,8 +38,10 @@ export default class QuestionDialog extends WaterfallDialog {
     );
     this.addStep(this.wantToStartQuestion.bind(this));
     this.addStep(this.handleStart.bind(this));
+    this.addStep(this.handleUserWantsExample.bind(this));
     this.addStep(this.handleQuestion.bind(this));
     this.addStep(this.handleConcept.bind(this));
+
     // this.addStep(this.handleFeedback.bind(this));
     // this.addStep(this.handlePersonRequest.bind(this));
     this.api = new CitynetApi();
@@ -51,71 +55,91 @@ export default class QuestionDialog extends WaterfallDialog {
         { value: 'Medewerker' },
       ],
       prompt: 'Citybot proberen?',
-      retryPrompt: 'Gelieve de knoppen te gebruiken.',
+      retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
     });
   }
 
   private async handleStart(step: WaterfallStepContext) {
     if (step.context.activity.text === ConfirmTypes.NEGATIVE) {
+      // ? user does not want to try
       await step.endDialog();
     } else if (step.context.activity.text === ConfirmTypes.POSITIVE) {
+      // ? user wants to try
       await step.context.sendActivity('Stel gerust je vraag');
+      await step.prompt('confirm_prompt', {
+        choices: [{ value: 'Ja graag' }, { value: 'Neen ik begrijp het' }],
+        prompt: `Wenst u even te zien op welke manier vragen gesteld kunnen worden?`,
+        retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
+      });
     } else if (step.context.activity.text === 'Medewerker') {
-      await step.context.sendActivity(
-        `Uw vragen worden doorgestuurd naar een medewerker van uw stad of gemeente.
-        Prettige dag verder`,
-      );
+      // ? User wants to talk to a person
+      await this.handleEmployee(step.context);
       await step.endDialog();
     }
   }
 
-  private async handleQuestion(sctx: WaterfallStepContext) {
-    // ? Send the documents
-    await sctx.context.sendActivity(lang.getStringFor(lang.WAIT_WHILE_FETCH));
+  private async handleUserWantsExample(step: WaterfallStepContext) {
+    if (step.context.activity.text === 'Ja graag') {
+      // tslint:disable:max-line-length
+      await step.context.sendActivity(
+        `Een voorbeeldvraag zou kunnen zijn:
+        "Welke beslissingen werden in de Gemeenteraad genomen omtrent de vernieuwing van onze sportterreinen?"`,
+      );
+      // tslint:enable:max-line-length
+      await step.context.sendActivity('Stel gerust je vraag.');
+    } else if (step.context.activity.text === 'Neen ik begrijp het') {
+      await step.context.sendActivity('Stel gerust je vraag.');
+    }
+  }
 
-    await sctx.context.sendActivity({
+  private async handleQuestion(step: WaterfallStepContext) {
+    // ? Send the documents
+    await step.context.sendActivity(lang.getStringFor(lang.WAIT_WHILE_FETCH));
+
+    await step.context.sendActivity({
       type: ActivityTypes.Typing,
     });
     const resolved: QueryResponse = await this.api.query(
-      sctx.context.activity.text,
+      step.context.activity.text,
     );
 
     // ? break when no documents were found
     if (resolved.documents.length <= 0) {
-      await sctx.endDialog();
-      return await this.waitFor(sctx, async () => {
-        await sctx.context.sendActivity(lang.getStringFor(lang.NO_DOCS_FOUND));
-        await sctx.context.sendActivity(lang.getStringFor(lang.MORE_QUESTIONS));
+      await step.endDialog();
+      return await this.waitFor(step, async () => {
+        await step.context.sendActivity(lang.getStringFor(lang.NO_DOCS_FOUND));
+        await step.context.sendActivity(lang.getStringFor(lang.MORE_QUESTIONS));
       });
     }
 
     // ? save resolved documents to local storage
-    await this.docsAccessor.set(sctx.context, resolved);
+    await this.docsAccessor.set(step.context, resolved);
 
     // ? ask if concept is correct
     if (!resolved.conceptsOfQuery) {
       console.log('no concepts, skipping question');
-      await sctx.next();
-      return await this.handleConcept(sctx, true);
+      await step.next();
+      return await this.handleConcept(step, true);
     }
 
-    await this.waitFor(sctx, async () => {
+    await this.waitFor(step, async () => {
       const formatConcepts = (conceptsArray: string[]) =>
         conceptsArray.map(concept => conceptMapping(concept)).join(', ');
-      await sctx.prompt(CorrectConceptPrompt.ID, {
+      await step.prompt('confirm_prompt', {
         prompt: lang
           .getStringFor(lang.ASK_CORRECT_CONCEPTS)
           .replace('%1%', formatConcepts(resolved.conceptsOfQuery || [])),
         retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
+        choices: [ConfirmTypes.POSITIVE, ConfirmTypes.NEGATIVE, 'Medewerker'],
       });
     });
   }
 
-  private async handleConcept(sctx: WaterfallStepContext, skipped?: boolean) {
-    const answer = sctx.context.activity.text;
+  private async handleConcept(step: WaterfallStepContext, skipped?: boolean) {
+    const answer = step.context.activity.text;
     if (answer === ConfirmTypes.POSITIVE || skipped) {
-      const resolved: QueryResponse = await this.docsAccessor.get(sctx.context);
-      if (sctx.context.activity.channelId === ChannelId.Facebook) {
+      const resolved: QueryResponse = await this.docsAccessor.get(step.context);
+      if (step.context.activity.channelId === ChannelId.Facebook) {
         const fbCardBuilder = new FacebookCardBuilder();
         resolved.documents.forEach((doc, i) =>
           fbCardBuilder.addCard(
@@ -135,7 +159,7 @@ export default class QuestionDialog extends WaterfallDialog {
             ),
           ),
         );
-        await sctx.context.sendActivity(fbCardBuilder.getData());
+        await step.context.sendActivity(fbCardBuilder.getData());
       } else {
         const cards = map(resolved.documents, document => {
           return CardFactory.heroCard(
@@ -156,12 +180,19 @@ export default class QuestionDialog extends WaterfallDialog {
             ],
           );
         });
-        await sctx.context.sendActivity(MessageFactory.carousel(cards));
+        await step.context.sendActivity(MessageFactory.carousel(cards));
+        await step.prompt('confirm_prompt', {
+          prompt: 'Hebt u gevonden wat u zocht?',
+          retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
+          choices: [ConfirmTypes.POSITIVE, 'Nee'],
+        });
       }
     } else if (answer === ConfirmTypes.NEGATIVE) {
-      await sctx.context.sendActivity(lang.getStringFor(lang.REPHRASE));
-      await sctx.endDialog();
-      await sctx.beginDialog(QuestionDialog.ID);
+      await step.context.sendActivity(lang.getStringFor(lang.REPHRASE));
+      await step.endDialog();
+      await step.beginDialog(QuestionDialog.ID);
+    } else if (answer === 'Medewerker') {
+      return await this.handleEmployee(step.context);
     }
   }
 
@@ -183,9 +214,9 @@ export default class QuestionDialog extends WaterfallDialog {
   //   }
   // }
 
-  public async askFeedback(sctx: DialogContext): Promise<any> {
-    await this.waitFor(sctx, async () => {
-      await sctx.prompt(FeedbackPrompt.ID, {
+  public async askFeedback(step: DialogContext): Promise<any> {
+    await this.waitFor(step, async () => {
+      await step.prompt(FeedbackPrompt.ID, {
         prompt: lang.getStringFor(lang.USEFULLNESS_QUERY),
         retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
       });
@@ -250,8 +281,15 @@ export default class QuestionDialog extends WaterfallDialog {
     return await dialogContext.context.sendActivity(reply);
   }
 
-  private async waitFor(sctx: DialogContext, cb: Function): Promise<any> {
-    await sctx.context.sendActivity({
+  private async handleEmployee(context: TurnContext) {
+    return await context.sendActivity(
+      `Uw vragen worden doorgestuurd naar een medewerker van uw stad of gemeente.
+      Prettige dag verder`,
+    );
+  }
+
+  private async waitFor(step: DialogContext, cb: Function): Promise<any> {
+    await step.context.sendActivity({
       type: ActivityTypes.Typing,
     });
     return new Promise(resolve => {

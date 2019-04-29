@@ -1,6 +1,6 @@
 import { sample } from 'lodash';
 
-export default new class {
+export default new (class {
   public readonly WELCOME = 'welcome';
   public readonly WAIT_WHILE_FETCH = 'wait_while_fetch';
   public readonly NO_DOCS_FOUND = 'no_docs_found';
@@ -67,8 +67,10 @@ export default new class {
       'Ik heb een jouw vraag gelinkt aan de volgende concepten:\n"%1%"\nKlopt dit?',
     ],
     [this.REPHRASE]: [
-      'Kan je de vraag op een andere manier stellen zodat ik in het juiste domein ga zoeken?',
-      'Gelieve de vraag iets specifieker te maken, zodat ik op de juiste plek ga zoeken',
+      `Kan je de vraag op een andere manier stellen zodat ik in het juiste domein ga zoeken?
+      De conversatie word opnieuw gestart`,
+      `Gelieve de vraag iets specifieker te maken, zodat ik op de juiste plek ga zoeken.
+      De conversatie word opnieuw gestart.`,
     ],
 
     default: [],
@@ -77,4 +79,4 @@ export default new class {
   getStringFor(key: string): string {
     return sample(this.options[key] || this.options.default);
   }
-}();
+})();

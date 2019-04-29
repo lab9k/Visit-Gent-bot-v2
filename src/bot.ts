@@ -63,6 +63,7 @@ export class CityBot {
     const options = {
       [ActivityTypes.Message]: async () => {
         if (
+          dialogContext.context.activity.text &&
           dialogContext.context.activity.text.toLowerCase() === 'get started'
         ) {
           await dialogContext.endDialog();

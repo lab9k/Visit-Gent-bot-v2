@@ -108,7 +108,6 @@ export default class CitynetApi {
     const headers = await nodeFetch(resourceUri, {
       headers: { Authorization: `Bearer ${this.token.value}` },
     }).then(res => res.headers);
-
     const contentDisposition = headers.get('content-disposition');
     const attachment = contentDisposition.split('; ');
     const filename = attachment[1].split(' = ')[1];
