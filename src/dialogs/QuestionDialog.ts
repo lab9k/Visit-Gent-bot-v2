@@ -246,24 +246,25 @@ export default class QuestionDialog extends WaterfallDialog {
 
     if (dialogContext.context.activity.channelId === ChannelId.Facebook) {
       const fd = new FormData();
-      fd.append('file', ret.buffer, {
+      fd.append('filedata', ret.buffer, {
         filename: ret.filename,
         contentType: ret.contentType,
       });
-      return nodeFetch('http://file.io/?expires=1d', {
+      // curl -H "Max-Downloads: 1" -H "Max-Days: 5"
+      // --upload-file ./hello.txt https://transfer.sh/hello.txt
+      await dialogContext.context.sendActivity(
+        `Ik stuur je de downloadlink onmiddelijk door.`,
+      );
+      return nodeFetch(`https://transfer.sh/`, {
         method: 'POST',
         body: fd,
+        headers: [['Max-Downloads', '10'], ['Max-Days', '5']],
       })
-        .then(async res => res.json())
+        .then(async res => res.text())
         .then(async res => {
-          await dialogContext.context.sendActivity(
-            `Ik stuur je de downloadlink onmiddelijk door.
-            De file kan 1 maal gedownload worden.`,
-          );
           console.log(res);
-          return this.waitFor(dialogContext, async () => {
-            return await dialogContext.context.sendActivity(`${res.link}`);
-          });
+
+          return await dialogContext.context.sendActivity(`${res}`);
         });
     }
     const reply = {

@@ -662,7 +662,7 @@
         "signature": "55f4b87f27e4f2fac4820e2c822f6476dea04317b695c1f3f9fa94a386a6e456"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/questiondialog.ts": {
-        "version": "7d26672c43cc942f424b8fe61de2883d0e7953ad7afdf52558c86d3fd2274a0f",
+        "version": "a00d46a25a210e74d5ae5e397161fad7428e993a4125ce6cb8c465a459747e23",
         "signature": "5cf83ac64fb69b625a35a85cc1d77a4bf27471b1a0d104ac197a5285ab3c4734"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/correctconceptprompt.ts": {
