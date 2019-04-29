@@ -69,8 +69,9 @@ export default class CitynetApi {
   public async login(): Promise<{ value: string; date: string }> {
     if (!this.isTokenValid()) {
       const params = new URLSearchParams();
-      params.append('login', this.getCredentials().login);
-      params.append('password', this.getCredentials().password);
+      const { login, password } = this.getCredentials();
+      params.append('login', login);
+      params.append('password', password);
       const { headers } = await nodeFetch(
         'https://api.cloud.nalantis.com/auth/v2/users/login',
         {
@@ -108,6 +109,7 @@ export default class CitynetApi {
     const headers = await nodeFetch(resourceUri, {
       headers: { Authorization: `Bearer ${this.token.value}` },
     }).then(res => res.headers);
+    console.log(resourceUri);
     const contentDisposition = headers.get('content-disposition');
     const attachment = contentDisposition.split('; ');
     const filename = attachment[1].split(' = ')[1];

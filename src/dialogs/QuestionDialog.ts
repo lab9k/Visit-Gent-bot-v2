@@ -181,11 +181,11 @@ export default class QuestionDialog extends WaterfallDialog {
           );
         });
         await step.context.sendActivity(MessageFactory.carousel(cards));
-        await step.prompt('confirm_prompt', {
-          prompt: 'Hebt u gevonden wat u zocht?',
-          retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
-          choices: [ConfirmTypes.POSITIVE, 'Nee'],
-        });
+        // await step.prompt('confirm_prompt', {
+        //   prompt: 'Hebt u gevonden wat u zocht?',
+        //   retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
+        //   choices: [ConfirmTypes.POSITIVE, 'Nee'],
+        // });
       }
     } else if (answer === ConfirmTypes.NEGATIVE) {
       await step.context.sendActivity(lang.getStringFor(lang.REPHRASE));
