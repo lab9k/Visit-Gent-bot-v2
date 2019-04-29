@@ -65,7 +65,6 @@ export default class QuestionDialog extends WaterfallDialog {
       await step.endDialog();
     } else if (step.context.activity.text === ConfirmTypes.POSITIVE) {
       // ? user wants to try
-      await step.context.sendActivity('Stel gerust je vraag');
       await step.prompt('confirm_prompt', {
         choices: [{ value: 'Ja graag' }, { value: 'Neen ik begrijp het' }],
         prompt: `Wenst u even te zien op welke manier vragen gesteld kunnen worden?`,
