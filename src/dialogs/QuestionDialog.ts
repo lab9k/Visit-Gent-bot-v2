@@ -25,6 +25,7 @@ import { ChannelId } from '../models/ChannelIds';
 import { FacebookCardBuilder, FacebookCard } from '../models/FacebookCard';
 import nodeFetch from 'node-fetch';
 import * as FormData from 'form-data';
+import * as Turndown from 'turndown';
 
 export default class QuestionDialog extends WaterfallDialog {
   public static readonly ID = 'question_dialog';
@@ -140,30 +141,36 @@ export default class QuestionDialog extends WaterfallDialog {
 de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te drukken.`);
       if (step.context.activity.channelId === ChannelId.Facebook) {
         const fbCardBuilder = new FacebookCardBuilder();
-        resolved.documents.forEach((doc, i) =>
-          fbCardBuilder.addCard(
-            new FacebookCard(
-              `Document ${i}`,
-              `${take(doc.highlighting[0].split(' '), 50).join(' ')}...`,
-              {
-                type: 'postback',
-                title: 'Download pdf',
-                payload: JSON.stringify({
-                  type: 'download',
-                  value: {
-                    uuid: doc.resourceURI,
-                  },
-                }),
-              },
-            ),
-          ),
-        );
+        resolved.documents.forEach((doc, i) => {
+          const td = new Turndown();
+          const desc = take(
+            td.turndown(doc.highlighting.join(' ')).split(' '),
+            50,
+          ).join(' ');
+          return fbCardBuilder.addCard(
+            new FacebookCard(`Document ${i}`, `${desc}...`, {
+              type: 'postback',
+              title: 'Download pdf',
+              payload: JSON.stringify({
+                type: 'download',
+                value: {
+                  uuid: doc.resourceURI,
+                },
+              }),
+            }),
+          );
+        });
         await step.context.sendActivity(fbCardBuilder.getData());
       } else {
         const cards = map(resolved.documents, document => {
+          const td = new Turndown();
+          const desc = take(
+            td.turndown(document.highlighting.join(' ')).split(' '),
+            20,
+          ).join(' ');
           return CardFactory.heroCard(
-            `${take(document.content.split(' '), 5).join(' ')}...`,
-            `${take(document.highlighting[0].split(' '), 20).join(' ')}...`,
+            `${take(document.summary.split(' '), 5).join(' ')}...`,
+            `${desc}...`,
             [],
             [
               {
