@@ -40,8 +40,7 @@ export default class QuestionDialog extends WaterfallDialog {
     this.addStep(this.handleUserWantsExample.bind(this));
     this.addStep(this.handleQuestion.bind(this));
     this.addStep(this.handleConcept.bind(this));
-
-    // this.addStep(this.handleFeedback.bind(this));
+    this.addStep(this.handleFeedback.bind(this));
     // this.addStep(this.handlePersonRequest.bind(this));
     this.api = new CitynetApi();
   }
@@ -182,14 +181,12 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
           );
         });
         await step.context.sendActivity(MessageFactory.carousel(cards));
-        await step.endDialog();
-        await step.beginDialog(QuestionDialog.ID);
-        // await step.prompt('confirm_prompt', {
-        //   prompt: 'Hebt u gevonden wat u zocht?',
-        //   retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
-        //   choices: [ConfirmTypes.POSITIVE, 'Nee'],
-        // });
       }
+      await step.prompt('confirm_prompt', {
+        prompt: 'Hebt u gevonden wat u zocht?',
+        retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
+        choices: [ConfirmTypes.POSITIVE, ConfirmTypes.NEGATIVE],
+      });
     } else if (answer === ConfirmTypes.NEGATIVE) {
       await step.context.sendActivity(lang.getStringFor(lang.REPHRASE));
       await step.endDialog();
@@ -199,23 +196,22 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
     }
   }
 
-  // private async handleFeedback(sctx: WaterfallStepContext) {
-  //   const answer = sctx.context.activity.text;
-  //   if (answer === FeedbackTypes.GOOD) {
-  //     await sctx.context.sendActivity(lang.getStringFor(lang.THANK_FEEDBACK));
-  //     await this.waitFor(sctx, async () => {
-  //       await sctx.context.sendActivity(lang.getStringFor(lang.MORE_QUESTIONS));
-  //     });
-  //     await sctx.endDialog();
-  //   }
-  //   if (answer === FeedbackTypes.BAD) {
-  //     await sctx.prompt('confirm_prompt', {
-  //       prompt: lang.getStringFor(lang.REAL_PERSON),
-  //       retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
-  //       choices: [lang.POSITIVE, lang.NEGATIVE],
-  //     });
-  //   }
-  // }
+  private async handleFeedback(step: WaterfallStepContext) {
+    const answer = step.context.activity.text;
+    if (answer === ConfirmTypes.POSITIVE) {
+      await step.context.sendActivity(lang.getStringFor(lang.THANK_FEEDBACK));
+      await this.waitFor(step, async () => {
+        await step.context.sendActivity(lang.getStringFor(lang.MORE_QUESTIONS));
+        await step.endDialog();
+        await step.beginDialog(QuestionDialog.ID);
+      });
+    }
+    if (answer === ConfirmTypes.NEGATIVE) {
+      await step.context.sendActivity(lang.getStringFor(lang.REPHRASE));
+      await step.endDialog();
+      await step.beginDialog(QuestionDialog.ID);
+    }
+  }
 
   public async askFeedback(step: DialogContext): Promise<any> {
     await this.waitFor(step, async () => {

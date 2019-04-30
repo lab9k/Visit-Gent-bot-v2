@@ -662,8 +662,8 @@
         "signature": "55f4b87f27e4f2fac4820e2c822f6476dea04317b695c1f3f9fa94a386a6e456"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/questiondialog.ts": {
-        "version": "74328ff8e06fda463ba074a87777452c3dead92beb43f9089965dbd14612f3cd",
-        "signature": "5cf83ac64fb69b625a35a85cc1d77a4bf27471b1a0d104ac197a5285ab3c4734"
+        "version": "0990c33ea323c565c9df51e920e1be6504dd96fca5874bf8c50665616eddba1d",
+        "signature": "50fac4ebba2a99cd9efaaeb7c071e2fd78560c15ad98e4d8b6ee9857d82d9b5c"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/correctconceptprompt.ts": {
         "version": "c4baf5188328f10e267cbea0d2ea61bec6360721067b9ddc523767d3c415988c",
@@ -2537,6 +2537,22 @@
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/bunyan/index.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/spdy/index.d.ts"
       ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/cosmosdbstorage.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/blobstorage.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/azureblobtranscriptstore.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/blobstorage.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/cosmosdbstorage.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/blobstorage.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/azureblobtranscriptstore.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/cosmosdbkeyescape.d.ts"
+      ],
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/connectedservice.d.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts"
       ],
@@ -2636,22 +2652,6 @@
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/documentcard.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/queryresponse.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/adaptivecards.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/cosmosdbstorage.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/cosmosdbstorage.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/blobstorage.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/azureblobtranscriptstore.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/cosmosdbkeyescape.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/blobstorage.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/azureblobtranscriptstore.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/blobstorage.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -2820,7 +2820,6 @@
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/channelids.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/facebookcard.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/form-data/index.d.ts",
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/questiondialog.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/correctconceptprompt.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/api/airtableapi.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/bot.ts",
@@ -2829,6 +2828,11 @@
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/spdy/index.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/restify/index.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/flatted/types.d.ts",
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/cosmosdbstorage.d.ts",
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/blobstorage.d.ts",
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/azureblobtranscriptstore.d.ts",
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/cosmosdbkeyescape.d.ts",
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/index.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/connectedservice.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/azureservice.d.ts",
@@ -2847,6 +2851,7 @@
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/botconfiguration.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/botrecipe.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/index.d.ts",
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/index.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/enums.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/utils.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/host-config.d.ts",
@@ -2854,12 +2859,7 @@
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/schema.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/adaptivecards.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/documentcard.ts",
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/cosmosdbstorage.d.ts",
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/blobstorage.d.ts",
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/azureblobtranscriptstore.d.ts",
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/cosmosdbkeyescape.d.ts",
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/index.d.ts",
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/index.ts"
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/questiondialog.ts"
     ]
   },
   "version": "3.4.5"
