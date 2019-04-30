@@ -15,55 +15,32 @@ export default class CitynetApi {
 
   public async query(question: string): Promise<QueryResponse> {
     await this.login();
-
-    const data = await nodeFetch(
-      `${this.baseUrl}/v2/documents/query/semantic/generic`,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-          Authorization: `Bearer ${this.token.value}`,
+    let ret: QueryResponse;
+    try {
+      const res = await nodeFetch(
+        `${this.baseUrl}/v2/documents/query/semantic/generic`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+            Authorization: `Bearer ${this.token.value}`,
+          },
+          body: JSON.stringify({
+            query: question,
+            targetDocumentType: 'citynet',
+            resultDetailLevel: 9,
+            rows: 5,
+          }),
         },
-        body: JSON.stringify({
-          query: question,
-          targetDocumentType: 'citynet',
-          resultDetailLevel: 9,
-          rows: 10,
-        }),
-      },
-    )
-      .then(res => res.json())
-      .then(json => {
-        const ret = <QueryResponse>json;
-        ret.query = question;
-        return ret;
-      })
-      .catch(err => {
-        throw err;
-      });
-    return data;
-    // return axios
-    //   .request<QueryResponse>({
-    //     method: 'POST',
-    //     url: `${this.baseUrl}/v2/documents/query/semantic/generic`,
-    //     data: {
-    //       query: question,
-    //       targetDocumentType: 'citynet',
-    //       resultDetailLevel: 9,
-    //       rows: 10,
-    //     },
-    //     headers: {
-    //       'Content-Type': 'application/json',
-    //       Authorization: `Bearer ${this.token.value}`,
-    //     },
-    //   })
-    //   .then(d => {
-    //     return d.data;
-    //   })
-    //   .catch(err => {
-    //     throw err;
-    //   });
+      );
+      const json = await res.json();
+      ret = <QueryResponse>json;
+    } catch (error) {
+      ret = { documents: [], conceptsOfQuery: [] };
+    }
+
+    return { ...ret, query: question };
   }
 
   public async login(): Promise<{ value: string; date: string }> {

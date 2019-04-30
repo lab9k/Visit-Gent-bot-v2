@@ -199,11 +199,9 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
     const answer = step.context.activity.text;
     if (answer === ConfirmTypes.POSITIVE) {
       await step.context.sendActivity(lang.getStringFor(lang.THANK_FEEDBACK));
-      await this.waitFor(step, async () => {
-        await step.context.sendActivity(lang.getStringFor(lang.MORE_QUESTIONS));
-        await step.endDialog();
-        await step.beginDialog(QuestionDialog.ID);
-      });
+      await step.context.sendActivity(lang.getStringFor(lang.MORE_QUESTIONS));
+      await step.endDialog();
+      await step.beginDialog(QuestionDialog.ID);
     }
     if (answer === ConfirmTypes.NEGATIVE) {
       await step.context.sendActivity(lang.getStringFor(lang.REPHRASE));
