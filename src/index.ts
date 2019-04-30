@@ -14,6 +14,7 @@ import {
   MemoryStorage,
   UserState,
 } from 'botbuilder';
+import { BlobStorage } from 'botbuilder-azure';
 
 // Import required bot configuration.
 import { BotConfiguration, IEndpointService } from 'botframework-config';
@@ -98,22 +99,26 @@ let conversationState: ConversationState;
 // is restarted, anything stored in memory will be gone.
 const memoryStorage = new MemoryStorage();
 conversationState = new ConversationState(memoryStorage);
-const userState = new UserState(memoryStorage);
+let userState = new UserState(memoryStorage);
 
 // CAUTION: You must ensure your product environment has the NODE_ENV set
 //          to use the Azure Blob storage or Azure Cosmos DB providers.
-// import { BlobStorage } from 'botbuilder-azure';
-// Storage configuration name or ID from .bot file
-// const STORAGE_CONFIGURATION_ID = '<STORAGE-NAME-OR-ID-FROM-BOT-FILE>';
-// // Default container name
-// const DEFAULT_BOT_CONTAINER = '<DEFAULT-CONTAINER>';
-// // Get service configuration
-// const blobStorageConfig = botConfig.findServiceByNameOrId(STORAGE_CONFIGURATION_ID);
-// const blobStorage = new BlobStorage({
-//     containerName: (blobStorageConfig.container || DEFAULT_BOT_CONTAINER),
-//     storageAccountOrConnectionString: blobStorageConfig.connectionString,
-// });
-// conversationState = new ConversationState(blobStorage);
+if (process.env.NODE_ENV === 'production') {
+  // Storage configuration name or ID from .bot file
+  const STORAGE_CONFIGURATION_ID = '2';
+  // Default container name
+  const DEFAULT_BOT_CONTAINER = 'citybot';
+  // Get service configuration
+  const blobStorageConfig = botConfig.findServiceByNameOrId(
+    STORAGE_CONFIGURATION_ID,
+  );
+  const blobStorage = new BlobStorage({
+    containerName: blobStorageConfig['container'] || DEFAULT_BOT_CONTAINER,
+    storageAccountOrConnectionString: blobStorageConfig['connectionString'],
+  });
+  conversationState = new ConversationState(blobStorage);
+  userState = new UserState(blobStorage);
+}
 
 // Create the Citybot.
 const bot = new CityBot(conversationState, userState);
