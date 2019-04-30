@@ -80,7 +80,7 @@ export default class QuestionDialog extends WaterfallDialog {
       // tslint:disable:max-line-length
       await step.context.sendActivity(
         `Een voorbeeldvraag zou kunnen zijn:
-        "Welke beslissingen werden in de Gemeenteraad genomen omtrent de vernieuwing van onze sportterreinen?"`,
+"Welke beslissingen werden in de Gemeenteraad genomen omtrent de vernieuwing van onze sportterreinen?"`,
       );
       // tslint:enable:max-line-length
       await step.context.sendActivity('Stel gerust je vraag.');

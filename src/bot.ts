@@ -12,7 +12,6 @@ import lang from './lang';
 import CorrectConceptPrompt from './dialogs/CorrectConceptPrompt';
 import { ChannelId } from './models/ChannelIds';
 import AirtableApi from './api/AirtableApi';
-import { ConfirmTypes } from './models/ConfirmTypes';
 
 const DIALOG_STATE_PROPERTY = 'dialog_state_prop';
 export class CityBot {

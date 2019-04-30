@@ -20,8 +20,8 @@ export default new (class {
   private options = {
     [this.WELCOME]: [
       `Hallo. Ik ben uw Citybot! U kan mij vanaf vandaag eender
-      welke vraag stellen over de Besluitvorming van uw Stad of Gemeente.
-      U kan op ieder moment opnieuw beginnen door 'get started' te typen`,
+welke vraag stellen over de Besluitvorming van uw Stad of Gemeente.
+U kan op ieder moment opnieuw beginnen door 'get started' te typen`,
     ],
     [this.PRIVACY_INFO]: [
       'Uw vragen en privacy worden volgens GDPR wetgeving behandeld. U ' +
@@ -68,9 +68,9 @@ export default new (class {
     ],
     [this.REPHRASE]: [
       `Kan je de vraag op een andere manier stellen zodat ik in het juiste domein ga zoeken?
-      De conversatie word opnieuw gestart`,
+De conversatie word opnieuw gestart`,
       `Gelieve de vraag iets specifieker te maken, zodat ik op de juiste plek ga zoeken.
-      De conversatie word opnieuw gestart.`,
+De conversatie word opnieuw gestart.`,
     ],
 
     default: [],
