@@ -65,7 +65,7 @@ export default class QuestionDialog extends WaterfallDialog {
       // ? user wants to try
       await step.prompt('confirm_prompt', {
         choices: [{ value: 'Ja graag' }, { value: 'Neen ik begrijp het' }],
-        prompt: `Wenst u even te zien op welke manier vragen gesteld kunnen worden?`,
+        prompt: `Wenst u even te zien op welke manier vragen gesteld kunnen worden? `,
         retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
       });
     } else if (step.context.activity.text === 'Medewerker') {
@@ -80,10 +80,10 @@ export default class QuestionDialog extends WaterfallDialog {
       // tslint:disable:max-line-length
       await step.context.sendActivity(
         `Een voorbeeldvraag zou kunnen zijn:
-"Welke beslissingen werden in de Gemeenteraad genomen omtrent de vernieuwing van onze sportterreinen?"`,
+"Welke beslissingen werden in de Gemeenteraad genomen omtrent de vernieuwing van onze sportterreinen?" `,
       );
       // tslint:enable:max-line-length
-      await step.context.sendActivity('Stel gerust je vraag.');
+      await step.context.sendActivity('Stel gerust je vraag. 🤖');
     } else if (step.context.activity.text === 'Neen ik begrijp het') {
       await step.context.sendActivity('Stel gerust je vraag.');
     }
@@ -101,11 +101,13 @@ export default class QuestionDialog extends WaterfallDialog {
     );
 
     // ? break when no documents were found
-    if (resolved.documents.length <= 0) {
+    if (!resolved.documents || resolved.documents.length <= 0) {
       await step.endDialog();
       return await this.waitFor(step, async () => {
         await step.context.sendActivity(lang.getStringFor(lang.NO_DOCS_FOUND));
         await step.context.sendActivity(lang.getStringFor(lang.MORE_QUESTIONS));
+        await step.endDialog();
+        await step.beginDialog(QuestionDialog.ID);
       });
     }
 
