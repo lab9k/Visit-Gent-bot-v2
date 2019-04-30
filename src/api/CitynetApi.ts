@@ -30,7 +30,7 @@ export default class CitynetApi {
             query: question,
             targetDocumentType: 'citynet',
             resultDetailLevel: 9,
-            rows: 5,
+            rows: 3,
           }),
         },
       );
