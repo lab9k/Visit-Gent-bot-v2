@@ -102,13 +102,10 @@ export default class QuestionDialog extends WaterfallDialog {
 
     // ? break when no documents were found
     if (!resolved.documents || resolved.documents.length <= 0) {
+      await step.context.sendActivity(lang.getStringFor(lang.NO_DOCS_FOUND));
+      await step.context.sendActivity(lang.getStringFor(lang.MORE_QUESTIONS));
       await step.endDialog();
-      return await this.waitFor(step, async () => {
-        await step.context.sendActivity(lang.getStringFor(lang.NO_DOCS_FOUND));
-        await step.context.sendActivity(lang.getStringFor(lang.MORE_QUESTIONS));
-        await step.endDialog();
-        await step.beginDialog(QuestionDialog.ID);
-      });
+      await step.beginDialog(QuestionDialog.ID);
     }
 
     // ? save resolved documents to local storage
