@@ -182,6 +182,8 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
           );
         });
         await step.context.sendActivity(MessageFactory.carousel(cards));
+        await step.endDialog();
+        await step.beginDialog(QuestionDialog.ID);
         // await step.prompt('confirm_prompt', {
         //   prompt: 'Hebt u gevonden wat u zocht?',
         //   retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
