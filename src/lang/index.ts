@@ -21,7 +21,7 @@ export default new (class {
     [this.WELCOME]: [
       `Hallo. Ik ben uw Citybot! U kan mij vanaf vandaag eender
 welke vraag stellen over de Besluitvorming van uw Stad of Gemeente.
-U kan op ieder moment opnieuw beginnen door 'get started' te typen`,
+U kan op ieder moment opnieuw beginnen door 'get started' te typen. 🚀`,
     ],
     [this.PRIVACY_INFO]: [
       'Uw vragen en privacy worden volgens GDPR wetgeving behandeld. U ' +
@@ -33,13 +33,13 @@ U kan op ieder moment opnieuw beginnen door 'get started' te typen`,
       'Ok, ik zal even gaan zoeken naar de juiste documenten.',
     ],
     [this.NO_DOCS_FOUND]: [
-      `Helaas heb ik niets teruggevonden.`,
-      'Hier heb ik geen enkel document over gevonden.',
-      'Jammer genoeg vind ik niets terug.',
+      `Helaas heb ik niets teruggevonden. 😢`,
+      'Hier heb ik geen enkel document over gevonden. 😢',
+      'Jammer genoeg vind ik niets terug. 😢',
     ],
     [this.NOT_UNDERSTOOD_USE_BUTTONS]: [
-      'Dat heb ik niet verstaan. Gelieve de knoppen te gebruiken.',
-      'Wat?',
+      'Dat heb ik niet verstaan. Gelieve de knoppen te gebruiken. ☝',
+      'Ik versta je niet. Gelieve de knoppen te gebruiken. ☝️',
     ],
     [this.USEFULLNESS_QUERY]: [
       'Waren deze documenten nuttig?',
@@ -54,12 +54,12 @@ U kan op ieder moment opnieuw beginnen door 'get started' te typen`,
       'Ok, ik heb een mail verzonden. Binnekort word deze behandeld door een echte persoon.',
     ],
     [this.THANK_FEEDBACK]: [
-      'Bedankt voor de feedback!',
-      'Merci! Door deze feedback word ik alleen maar slimmer.',
+      'Bedankt voor de feedback! 🚀',
+      'Merci! Door deze feedback word ik alleen maar slimmer. 🤖',
     ],
     [this.MORE_QUESTIONS]: [
-      'Heb je nog meer vragen? Wees niet bang om ze hier te stellen.',
-      'Indien je nog vragen hebt, kan je ze hier stellen.',
+      'Heb je nog meer vragen? Wees niet bang om ze hier te stellen. 🕵',
+      'Indien je nog vragen hebt, kan je ze hier stellen. 🕵',
     ],
     [this.READ_MORE]: ['Download pdf'],
     [this.ASK_CORRECT_CONCEPTS]: [
