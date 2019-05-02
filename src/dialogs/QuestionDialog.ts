@@ -191,7 +191,7 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
       await step.prompt('confirm_prompt', {
         prompt: 'Hebt u gevonden wat u zocht?',
         retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
-        choices: [ConfirmTypes.POSITIVE, ConfirmTypes.NEGATIVE],
+        choices: [ConfirmTypes.POSITIVE, ConfirmTypes.NEGATIVE, 'Medewerker'],
       });
     } else if (answer === ConfirmTypes.NEGATIVE) {
       await step.context.sendActivity(lang.getStringFor(lang.REPHRASE));
@@ -209,22 +209,23 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
       await step.context.sendActivity(lang.getStringFor(lang.MORE_QUESTIONS));
       await step.endDialog();
       await step.beginDialog(QuestionDialog.ID);
-    }
-    if (answer === ConfirmTypes.NEGATIVE) {
+    } else if (answer === ConfirmTypes.NEGATIVE) {
       await step.context.sendActivity(lang.getStringFor(lang.REPHRASE));
       await step.endDialog();
       await step.beginDialog(QuestionDialog.ID);
+    } else if (answer === 'Medewerker') {
+      return await this.handleEmployee(step.context);
     }
   }
 
-  public async askFeedback(step: DialogContext): Promise<any> {
-    await this.waitFor(step, async () => {
-      await step.prompt(FeedbackPrompt.ID, {
-        prompt: lang.getStringFor(lang.USEFULLNESS_QUERY),
-        retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
-      });
-    });
-  }
+  // public async askFeedback(step: DialogContext): Promise<any> {
+  //   await this.waitFor(step, async () => {
+  //     await step.prompt(FeedbackPrompt.ID, {
+  //       prompt: lang.getStringFor(lang.USEFULLNESS_QUERY),
+  //       retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
+  //     });
+  //   });
+  // }
 
   // private async handlePersonRequest(sctx: WaterfallStepContext) {
   //   if (
