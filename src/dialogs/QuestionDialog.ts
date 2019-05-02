@@ -14,7 +14,6 @@ import {
 } from 'botbuilder';
 import CitynetApi from '../api/CitynetApi';
 import { map, take } from 'lodash';
-import FeedbackPrompt from './FeedbackPrompt';
 import lang from '../lang';
 import conceptMapping from '../lang/conceptMapping';
 
