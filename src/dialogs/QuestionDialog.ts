@@ -231,31 +231,31 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
     const filedata = readFileSync(`./downloads/${ret.filename}`);
     const base64file = Buffer.from(filedata).toString('base64');
 
-    // if (dialogContext.context.activity.channelId === ChannelId.Facebook) {
-    const fd = new FormData();
-    fd.append('filedata', ret.buffer, {
-      filename: ret.filename,
-      contentType: ret.contentType,
-    });
-    // curl -H "Max-Downloads: 1" -H "Max-Days: 5"
-    // --upload-file ./hello.txt https://transfer.sh/hello.txt
-    await dialogContext.context.sendActivity(
-      `Ik stuur je de downloadlink onmiddelijk door.`,
-    );
-    try {
-      console.log(`Uploading: ${ret.filename}`);
-      const res = await nodeFetch(`https://upfile.sh/${ret.filename}`, {
-        method: 'PUT',
-        body: fd,
-        headers: [['Max-Downloads', '10'], ['Max-Days', '5']],
+    if (dialogContext.context.activity.channelId === ChannelId.Facebook) {
+      const fd = new FormData();
+      fd.append('filedata', ret.buffer, {
+        filename: ret.filename,
+        contentType: ret.contentType,
       });
-      const resText = await res.json();
-      console.log(resText);
-      return await dialogContext.context.sendActivity(`${resText.dow}`);
-    } catch (error) {
-      throw error;
+      // curl -H "Max-Downloads: 1" -H "Max-Days: 5"
+      // --upload-file ./hello.txt https://transfer.sh/hello.txt
+      await dialogContext.context.sendActivity(
+        `Ik stuur je de downloadlink onmiddelijk door.`,
+      );
+      try {
+        console.log(`Uploading: ${ret.filename}`);
+        const res = await nodeFetch(`https://upfile.sh/${ret.filename}`, {
+          method: 'PUT',
+          body: fd,
+          headers: [['Max-Downloads', '10'], ['Max-Days', '5']],
+        });
+        const resText = await res.json();
+        console.log(resText);
+        return await dialogContext.context.sendActivity(`${resText.dow}`);
+      } catch (error) {
+        throw error;
+      }
     }
-    // }
     const reply = {
       type: ActivityTypes.Message,
       attachments: [
