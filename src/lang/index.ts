@@ -21,7 +21,7 @@ export default new (class {
     [this.WELCOME]: [
       `Hallo. Ik ben uw Citybot! U kan mij vanaf vandaag eender
 welke vraag stellen over de Besluitvorming van uw Stad of Gemeente.
-U kan op ieder moment opnieuw beginnen door 'get started' te typen. 🚀`,
+U kan op ieder moment opnieuw beginnen door op "Herstart" te klikken naast het input-veld. 🚀`,
     ],
     [this.PRIVACY_INFO]: [
       'Uw vragen en privacy worden volgens GDPR wetgeving behandeld. U ' +

@@ -1,6 +1,0 @@
-{
-  "sender": { "id": "2415596291824077" },
-  "recipient": { "id": "304854067077825" },
-  "timestamp": 1556283361102,
-  "postback": { "payload": "get_started", "title": "Get Started" }
-}
