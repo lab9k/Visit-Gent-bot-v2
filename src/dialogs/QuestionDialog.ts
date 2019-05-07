@@ -237,12 +237,12 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
         filename: ret.filename,
         contentType: ret.contentType,
       });
-      // curl -H "Max-Downloads: 1" -H "Max-Days: 5"
-      // --upload-file ./hello.txt https://transfer.sh/hello.txt
+
       await dialogContext.context.sendActivity(
         `Ik stuur je de downloadlink onmiddelijk door.`,
       );
       try {
+        // ? curl -F "file=@octocat.png" https://0x0.st
         const res = await nodeFetch(`https://0x0.st`, {
           method: 'POST',
           body: fd,
@@ -250,7 +250,7 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
         });
         const resText = await res.text();
         console.log(resText);
-        return await dialogContext.context.sendActivity(`${res}`);
+        return await dialogContext.context.sendActivity(`${resText}`);
       } catch (error) {
         throw error;
       }
