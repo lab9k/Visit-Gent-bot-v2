@@ -233,20 +233,20 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
 
     if (dialogContext.context.activity.channelId === ChannelId.Facebook) {
       const fd = new FormData();
-      fd.append('file', ret.buffer, {
+      fd.append('filedata', ret.buffer, {
         filename: ret.filename,
         contentType: ret.contentType,
       });
-
+      // curl -H "Max-Downloads: 1" -H "Max-Days: 5"
+      // --upload-file ./hello.txt https://transfer.sh/hello.txt
       await dialogContext.context.sendActivity(
         `Ik stuur je de downloadlink onmiddelijk door.`,
       );
       try {
-        // ? curl -F "file=@octocat.png" https://0x0.st
-        const res = await nodeFetch(`https://0x0.st`, {
+        const res = await nodeFetch(`https://upfile.sh/${ret.filename}`, {
           method: 'POST',
           body: fd,
-          // headers: [['Max-Downloads', '10'], ['Max-Days', '5']],
+          headers: [['Max-Downloads', '10'], ['Max-Days', '5']],
         });
         const resText = await res.text();
         console.log(resText);
