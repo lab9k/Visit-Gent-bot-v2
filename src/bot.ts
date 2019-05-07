@@ -41,6 +41,7 @@ export class CityBot {
   }
 
   async onTurn(turnContext: TurnContext) {
+    console.log('on turn');
     const dialogContext = await this.dialogs.createContext(turnContext);
     if (
       checkNested(
@@ -76,6 +77,7 @@ export class CityBot {
           dialogContext.context.activity.channelId !== ChannelId.Facebook &&
           turnContext.activity.membersAdded[0].name !== 'Bot'
         ) {
+          console.log(turnContext.activity.membersAdded[0].name);
           await this.welcomeUser(turnContext);
           await dialogContext.beginDialog(QuestionDialog.ID);
         }
