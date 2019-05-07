@@ -105,7 +105,7 @@ export default class QuestionDialog extends WaterfallDialog {
       await step.context.sendActivity(lang.getStringFor(lang.NO_DOCS_FOUND));
       await step.context.sendActivity(lang.getStringFor(lang.MORE_QUESTIONS));
       await step.endDialog();
-      await step.beginDialog(QuestionDialog.ID);
+      return await step.beginDialog(QuestionDialog.ID);
     }
 
     // ? save resolved documents to local storage
@@ -197,7 +197,8 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
       await step.endDialog();
       await step.beginDialog(QuestionDialog.ID);
     } else if (answer === 'Medewerker') {
-      return await this.handleEmployee(step.context);
+      await this.handleEmployee(step.context);
+      return step.endDialog();
     }
   }
 
@@ -213,29 +214,10 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
       await step.endDialog();
       await step.beginDialog(QuestionDialog.ID);
     } else if (answer === 'Medewerker') {
-      return await this.handleEmployee(step.context);
+      await this.handleEmployee(step.context);
+      return await step.endDialog();
     }
   }
-
-  // public async askFeedback(step: DialogContext): Promise<any> {
-  //   await this.waitFor(step, async () => {
-  //     await step.prompt(FeedbackPrompt.ID, {
-  //       prompt: lang.getStringFor(lang.USEFULLNESS_QUERY),
-  //       retryPrompt: lang.getStringFor(lang.NOT_UNDERSTOOD_USE_BUTTONS),
-  //     });
-  //   });
-  // }
-
-  // private async handlePersonRequest(sctx: WaterfallStepContext) {
-  //   if (
-  //     sctx.context.activity.text.toUpperCase() === lang.POSITIVE.toUpperCase()
-  //   ) {
-  //     await sctx.context.sendActivity(lang.getStringFor(lang.EMAIL_SENT));
-  //   } else {
-  //     await sctx.context.sendActivity(lang.getStringFor(lang.MORE_QUESTIONS));
-  //   }
-  //   await sctx.endDialog();
-  // }
 
   public async sendFile(
     dialogContext: DialogContext,
@@ -287,7 +269,7 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
   }
 
   private async handleEmployee(context: TurnContext) {
-    return await context.sendActivity(
+    await context.sendActivity(
       `Uw vragen worden doorgestuurd naar een medewerker van uw stad of gemeente.
       Prettige dag verder`,
     );

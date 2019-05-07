@@ -66,6 +66,7 @@ export class CityBot {
           dialogContext.context.activity.text.toLowerCase() === 'get started'
         ) {
           await dialogContext.endDialog();
+          await this.welcomeUser(turnContext);
           await dialogContext.beginDialog(QuestionDialog.ID);
         }
         await this.handleDialog(turnContext);
