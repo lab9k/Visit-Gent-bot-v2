@@ -49,20 +49,25 @@ export default class CitynetApi {
       const { login, password } = this.getCredentials();
       params.append('login', login);
       params.append('password', password);
-      const { headers } = await nodeFetch(
-        'https://api.cloud.nalantis.com/auth/v2/users/login',
-        {
-          method: 'POST',
-          body: params,
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        },
-      );
-      const token = {
-        value: headers.get('Authorization').split('Bearer ')[1],
-        date: headers.get('date'),
-      };
-      this.token = token;
-      return token;
+      try {
+        const { headers } = await nodeFetch(
+          'https://api.cloud.nalantis.com/auth/v2/users/login',
+          {
+            method: 'POST',
+            body: params,
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          },
+        );
+        const token = {
+          value: headers.get('Authorization').split('Bearer ')[1],
+          date: headers.get('date'),
+        };
+        this.token = token;
+        return token;
+      } catch (error) {
+        console.log(error.message);
+        return;
+      }
     }
     console.log('logged in');
     return this.token;
