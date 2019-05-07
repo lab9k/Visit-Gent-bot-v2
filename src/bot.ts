@@ -57,6 +57,7 @@ export class CityBot {
         'get_started'
       ) {
         // user clicked get_started
+        console.log('getting started');
         await this.welcomeUser(turnContext);
         await dialogContext.beginDialog(QuestionDialog.ID);
       }
