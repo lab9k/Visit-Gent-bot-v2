@@ -66,7 +66,7 @@ export default class CitynetApi {
         return token;
       } catch (error) {
         console.log(error.message);
-        return;
+        throw error;
       }
     }
     console.log('logged in');
