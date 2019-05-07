@@ -233,7 +233,7 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
 
     if (dialogContext.context.activity.channelId === ChannelId.Facebook) {
       const fd = new FormData();
-      fd.append('filedata', ret.buffer, {
+      fd.append('file', ret.buffer, {
         filename: ret.filename,
         contentType: ret.contentType,
       });
@@ -242,17 +242,18 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
       await dialogContext.context.sendActivity(
         `Ik stuur je de downloadlink onmiddelijk door.`,
       );
-      return nodeFetch(`https://transfer.sh/`, {
-        method: 'POST',
-        body: fd,
-        headers: [['Max-Downloads', '10'], ['Max-Days', '5']],
-      })
-        .then(async res => res.text())
-        .then(async res => {
-          console.log(res);
-
-          return await dialogContext.context.sendActivity(`${res}`);
+      try {
+        const res = await nodeFetch(`https://0x0.st`, {
+          method: 'POST',
+          body: fd,
+          // headers: [['Max-Downloads', '10'], ['Max-Days', '5']],
         });
+        const resText = await res.text();
+        console.log(resText);
+        return await dialogContext.context.sendActivity(`${res}`);
+      } catch (error) {
+        throw error;
+      }
     }
     const reply = {
       type: ActivityTypes.Message,
