@@ -1,6 +1,3 @@
-import { Document } from './QueryResponse';
-import { take } from 'lodash';
-
 interface FacebookData {
   channelData: {
     attachment: {
@@ -55,6 +52,7 @@ export class FacebookCard {
       title: this.title,
       subtitle: this.subtitle,
       buttons: this.buttons,
+      image_url: process.env.CARD_LOGO || undefined,
     };
   }
 }

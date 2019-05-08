@@ -557,10 +557,6 @@
         "version": "d62fa6fe33566fa743b3d6715a1a2fe46e937ba9d2ba158563c5744315d438a7",
         "signature": "d62fa6fe33566fa743b3d6715a1a2fe46e937ba9d2ba158563c5744315d438a7"
       },
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/queryresponse.ts": {
-        "version": "d775ba4e0a798408bda1a738fd90e0cd7c81990ae666696707aa86bf9e27e5fd",
-        "signature": "7d5c824053a0cc7ce5728a16cffd20dd074bc4682ba8dbdd62698a7914c30e1a"
-      },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/decompress/index.d.ts": {
         "version": "fb32fb9b2a2c9cfccae34a6383834030ea9ebab2e46964ab6e876fe2b9ca2f42",
         "signature": "fb32fb9b2a2c9cfccae34a6383834030ea9ebab2e46964ab6e876fe2b9ca2f42"
@@ -574,8 +570,8 @@
         "signature": "912989089693cac2ce78c83289b98d5d9be6d399009c5d2e06ad3edf50e7b335"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/api/citynetapi.ts": {
-        "version": "da168b9924a2b27c2c7e48d75472bbe2e5c1bb10044746c6e3d264969218f690",
-        "signature": "f6cd7ea3cdf7a42d44ac59e834f330d0f2497fc3bb13d11a74b872f24eba52d1"
+        "version": "fc5e41522aa218efd118e74244595932133a0afe813f9804bae47b83e5c23e13",
+        "signature": "99a37469f6920b9375b033eda57655cef3bfbdb25b86ea52d9897ee8a81aee2a"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts": {
         "version": "826e226ef4293d2e692c796d7cc81c94f353c57fd6016685b79d68134e5df047",
@@ -646,8 +642,8 @@
         "signature": "8c03fb8fdfce54476129dcd4dcd99d74ed8a0a6cb96085a00c03fed1091141b2"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/facebookcard.ts": {
-        "version": "7d6f949ad5d32f60d93ca8a7696836a074100a19ee12bda57259ba8bb433659a",
-        "signature": "386d1b325509c65ad09613b2df70676ef04ae8e0405200ed9bef19fac005ff48"
+        "version": "792f420baff3f14de6148c9d5bd26089008c6fe339238c879c8229d1aebfb768",
+        "signature": "8f7d1b867c9ada3185f83085b2d506edfbc5bd755fe2fa111b79d46cc1428edb"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/form-data/index.d.ts": {
         "version": "55f4b87f27e4f2fac4820e2c822f6476dea04317b695c1f3f9fa94a386a6e456",
@@ -658,8 +654,8 @@
         "signature": "b6ac027c5df9772d4f5e3b7cbdc0be580edefa06617e953a6705abb1a6a39cff"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/questiondialog.ts": {
-        "version": "5cc4ff123520b61c0a3fc643f21c3d99793539de353bff19eaa52ebe25cf16c5",
-        "signature": "4ac5d4200a00a6ac944a6488479dfc505090f07d29b460d2de344d26e19f9b41"
+        "version": "c6f845952ecc128da5a96143ad1bd7d48020b6f0f8407f31491c610b6fb1d9e0",
+        "signature": "2f92639b919976d5b251ed7ae536eb05dd1775dee83361754b9596769695291e"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/feedbacktypes.ts": {
         "version": "6253407c61aefc6bc9dd844f3a84f4679fde40944793cc6370503c02887a8774",
@@ -678,7 +674,7 @@
         "signature": "2569a60a55851f2747f35c241226eb158655c1d36fd16f8fbf95110e29bea142"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/bot.ts": {
-        "version": "8300abcfa9ab5eb9f5f1e685338d1331d4eaed731dc4c7227bff91b7c5092cca",
+        "version": "8cd8a66fdde5e20e732573ce1901583db08ae364d7f4186f2b3f6b5534bf0eed",
         "signature": "d803852a9445e69827ef1be7968ae6369a2ba91298fd25a1716a18fa943fbd08"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/dotenv/index.d.ts": {
@@ -822,8 +818,12 @@
         "signature": "a9b58012f1cfce947b0fcfff57d6eea5c951921d5a052a3c8751c8952cd24654"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/documentcard.ts": {
-        "version": "8067787bfbcb62593017a09f888d73f80fa0128d87165f3f7984cadb1897d1ce",
-        "signature": "b506f50870dba0e6e269af96c0f7dd4c649ecdaf917ece04ea5da0792a21b416"
+        "version": "91cf298a1654915c169c75b0e35414dd63d25f3a88f6a6f180ffa8cf5ce2de21",
+        "signature": "b9bfde2ab66db5f44d209c8caba7e05756a70ae4cfd0794c0aa0f5d98e25f26e"
+      },
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/queryresponse.ts": {
+        "version": "daa4544a77f3fc0d1837d489f0bb19a0d637922de9e1eb8d3756898d1ac62a96",
+        "signature": "829ee6a40457620ad829d079e6df5befe61cf122b4beee248084be27f8266013"
       }
     },
     "options": {
@@ -1397,7 +1397,6 @@
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node-fetch/index.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/moment/moment.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/queryresponse.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/download/index.d.ts"
       ],
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts": [
@@ -1585,10 +1584,6 @@
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/lang/index.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/facebookcard.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/queryresponse.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts"
-      ],
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/form-data/index.d.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
       ],
@@ -1599,7 +1594,6 @@
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/lang/index.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/lang/conceptmapping.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/queryresponse.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/confirmtypes.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/channelids.ts",
@@ -1763,7 +1757,6 @@
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/schema.d.ts"
       ],
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/documentcard.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/queryresponse.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/adaptivecards.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/lang/index.ts"
@@ -2325,9 +2318,6 @@
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/got/index.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/api/citynetapi.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/queryresponse.ts"
-      ],
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
@@ -2653,7 +2643,6 @@
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/schema.d.ts"
       ],
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/documentcard.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/queryresponse.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/adaptivecards.d.ts"
       ]
     },
@@ -2797,7 +2786,6 @@
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/axios/index.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node-fetch/index.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/moment/moment.d.ts",
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/queryresponse.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/decompress/index.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/got/index.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/download/index.d.ts",
@@ -2822,11 +2810,11 @@
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/facebookcard.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/form-data/index.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/turndown/index.d.ts",
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/questiondialog.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/feedbacktypes.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/feedbackprompt.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/correctconceptprompt.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/api/airtableapi.ts",
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/bot.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/dotenv/index.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/bunyan/index.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/spdy/index.d.ts",
@@ -2855,6 +2843,7 @@
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/botconfiguration.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/botrecipe.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/index.d.ts",
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/index.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/enums.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/utils.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/host-config.d.ts",
@@ -2862,8 +2851,8 @@
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/schema.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/adaptivecards.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/documentcard.ts",
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/bot.ts",
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/index.ts"
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/queryresponse.ts",
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/questiondialog.ts"
     ]
   },
   "version": "3.4.5"

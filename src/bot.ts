@@ -42,7 +42,6 @@ export class CityBot {
 
   async onTurn(turnContext: TurnContext) {
     const dialogContext = await this.dialogs.createContext(turnContext);
-    console.log(dialogContext.context.activity.channelData);
     if (
       checkNested(
         dialogContext.context.activity.channelData,
@@ -77,7 +76,6 @@ export class CityBot {
           dialogContext.context.activity.channelId !== ChannelId.Facebook &&
           turnContext.activity.membersAdded[0].name !== 'Bot'
         ) {
-          console.log(turnContext.activity.membersAdded[0].name);
           await this.welcomeUser(turnContext);
           await dialogContext.beginDialog(QuestionDialog.ID);
         }
@@ -130,6 +128,12 @@ export class CityBot {
               payload.value.uuid,
             );
             await dialogContext.repromptDialog();
+          } else if (payload.type === 'highlight') {
+            await this.questionDialog.sendHighlight(
+              dialogContext,
+              payload.value.uuid,
+            );
+            await dialogContext.repromptDialog();
           } else if (dialogContext.context.activity.text) {
             await dialogContext.continueDialog();
           }
@@ -158,6 +162,12 @@ export class CityBot {
           });
         } else if (payload.type === 'download') {
           await this.questionDialog.sendFile(dialogContext, payload.value.uuid);
+          await dialogContext.repromptDialog();
+        } else if (payload.type === 'highlight') {
+          await this.questionDialog.sendHighlight(
+            dialogContext,
+            payload.value.uuid,
+          );
           await dialogContext.repromptDialog();
         } else if (dialogContext.context.activity.text) {
           await dialogContext.continueDialog();

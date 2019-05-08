@@ -17,7 +17,6 @@ import { map, take } from 'lodash';
 import lang from '../lang';
 import conceptMapping from '../lang/conceptMapping';
 
-import QueryResponse from '../models/QueryResponse';
 import { ConfirmTypes } from '../models/ConfirmTypes';
 import { readFileSync } from 'fs';
 import { ChannelId } from '../models/ChannelIds';
@@ -29,10 +28,12 @@ import * as Turndown from 'turndown';
 export default class QuestionDialog extends WaterfallDialog {
   public static readonly ID = 'question_dialog';
   private readonly api: CitynetApi;
-  private readonly docsAccessor: StatePropertyAccessor<QueryResponse>;
+  private readonly docsAccessor: StatePropertyAccessor<
+    QueryResponse.QueryResponse
+  >;
   constructor(userState: UserState) {
     super(QuestionDialog.ID);
-    this.docsAccessor = userState.createProperty<QueryResponse>(
+    this.docsAccessor = userState.createProperty<QueryResponse.QueryResponse>(
       'resolved_data',
     );
     this.addStep(this.wantToStartQuestion.bind(this));
@@ -100,7 +101,7 @@ export default class QuestionDialog extends WaterfallDialog {
     await step.context.sendActivity({
       type: ActivityTypes.Typing,
     });
-    const resolved: QueryResponse = await this.api.query(
+    const resolved: QueryResponse.QueryResponse = await this.api.query(
       step.context.activity.text,
     );
 
@@ -138,7 +139,9 @@ export default class QuestionDialog extends WaterfallDialog {
   private async handleConcept(step: WaterfallStepContext, skipped?: boolean) {
     const answer = step.context.activity.text;
     if (answer === ConfirmTypes.POSITIVE || skipped) {
-      const resolved: QueryResponse = await this.docsAccessor.get(step.context);
+      const resolved: QueryResponse.QueryResponse = await this.docsAccessor.get(
+        step.context,
+      );
       await step.context
         .sendActivity(`Dit is de relevante info die ik heb gevonden in
 de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te drukken.`);
@@ -146,52 +149,64 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
         const fbCardBuilder = new FacebookCardBuilder();
         resolved.documents
           .sort((a, b) => {
-            return a.scoreInPercent - b.scoreInPercent;
+            return b.scoreInPercent - a.scoreInPercent;
           })
           .forEach((doc, i) => {
-            const td = new Turndown();
-            const desc = take(
-              td.turndown(doc.highlighting.join(' ')).split(' '),
-              50,
-            ).join(' ');
+            const desc = this.getBestParagraphForDoc(doc);
             return fbCardBuilder.addCard(
-              new FacebookCard(`Document ${i}`, `${desc}...`, {
-                type: 'postback',
-                title: 'Download pdf',
-                payload: JSON.stringify({
-                  type: 'download',
-                  value: {
-                    uuid: doc.resourceURI,
-                  },
-                }),
-              }),
+              new FacebookCard(
+                doc.originalURI,
+                `${desc}...`,
+                {
+                  type: 'postback',
+                  title: 'Download pdf',
+                  payload: JSON.stringify({
+                    type: 'download',
+                    value: {
+                      uuid: doc.resourceURI,
+                    },
+                  }),
+                },
+                {
+                  type: 'postback',
+                  title: 'Paragraaf',
+                  payload: JSON.stringify({
+                    type: 'highlight',
+                    value: {
+                      uuid: doc.resourceURI,
+                    },
+                  }),
+                },
+              ),
             );
           });
         await step.context.sendActivity(fbCardBuilder.getData());
       } else {
         const cards = map(
           resolved.documents.sort((a, b) => {
-            return a.scoreInPercent - b.scoreInPercent;
+            return b.scoreInPercent - a.scoreInPercent;
           }),
           document => {
-            const td = new Turndown();
-            const desc = take(
-              td.turndown(document.highlighting.join(' ')).split(' '),
-              20,
-            ).join(' ');
+            const desc = this.getBestParagraphForDoc(document);
             return CardFactory.heroCard(
-              `${take(document.summary.split(' '), 5).join(' ')}...`,
+              document.originalURI,
               `${desc}...`,
-              [],
+              [{ url: process.env.CARD_LOGO || undefined }],
               [
                 {
                   type: 'messageBack',
                   title: 'download document',
                   value: JSON.stringify({
                     type: 'download',
-                    value: {
-                      uuid: document.resourceURI,
-                    },
+                    value: { uuid: document.resourceURI },
+                  }),
+                },
+                {
+                  type: 'messageBack',
+                  title: 'Paragraaf',
+                  value: JSON.stringify({
+                    type: 'highlight',
+                    value: { uuid: document.resourceURI },
                   }),
                 },
               ],
@@ -232,6 +247,17 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
     }
   }
 
+  public async sendHighlight(dialogContext: DialogContext, uuid: string) {
+    const resolvedDocs: QueryResponse.QueryResponse = await this.docsAccessor.get(
+      dialogContext.context,
+    );
+    const chosenDoc = resolvedDocs.documents.find(d => d.resourceURI === uuid);
+
+    const reply = this.getBestParagraphForDoc(chosenDoc);
+
+    await dialogContext.context.sendActivity(reply);
+  }
+
   public async sendFile(
     dialogContext: DialogContext,
     uuid: string,
@@ -256,14 +282,12 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
         `Ik stuur je de downloadlink onmiddelijk door.`,
       );
       try {
-        console.log(`Uploading: ${ret.filename}`);
         const res = await nodeFetch(`https://upfile.sh/${ret.filename}`, {
           method: 'PUT',
           body: fd,
           headers: [['Max-Downloads', '10'], ['Max-Days', '5']],
         });
         const resText = await res.json();
-        console.log(resText);
         return await dialogContext.context.sendActivity(`${resText.dow}`);
       } catch (error) {
         throw error;
@@ -300,5 +324,14 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
         resolve(cb());
       },         Math.random() * 1000 + 1000);
     });
+  }
+
+  private getBestParagraphForDoc(doc: QueryResponse.Document): string {
+    const bestParagraph = doc.paragraphs.sort((a, b) => {
+      return b.scoreInPercent - a.scoreInPercent;
+    })[0];
+    const td = new Turndown();
+    const reply = td.turndown(bestParagraph.highlighting.join(''));
+    return reply;
   }
 }

@@ -2,7 +2,6 @@ import axios from 'axios';
 import nodeFetch from 'node-fetch';
 import { URLSearchParams } from 'url';
 import * as moment from 'moment';
-import QueryResponse from '../models/QueryResponse';
 import * as download from 'download';
 
 export default class CitynetApi {
@@ -13,9 +12,9 @@ export default class CitynetApi {
     this.login();
   }
 
-  public async query(question: string): Promise<QueryResponse> {
+  public async query(question: string): Promise<QueryResponse.QueryResponse> {
     await this.login();
-    let ret: QueryResponse;
+    let ret: QueryResponse.QueryResponse;
     try {
       const res = await nodeFetch(
         `${this.baseUrl}/v2/documents/query/semantic/generic`,
@@ -35,7 +34,7 @@ export default class CitynetApi {
         },
       );
       const json = await res.json();
-      ret = <QueryResponse>json;
+      ret = <QueryResponse.QueryResponse>json;
     } catch (error) {
       ret = { documents: [], conceptsOfQuery: [] };
     }
@@ -69,7 +68,6 @@ export default class CitynetApi {
         throw error;
       }
     }
-    console.log('logged in');
     return this.token;
   }
 

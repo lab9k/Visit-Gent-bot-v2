@@ -1,4 +1,3 @@
-import { Document } from './QueryResponse';
 import {
   AdaptiveCard,
   TextBlock,
@@ -22,14 +21,14 @@ export default class DocumentCard {
     this.internalCard.addItem(titleText);
     return this;
   }
-  public addSummary(document: Document): DocumentCard {
+  public addSummary(document: QueryResponse.Document): DocumentCard {
     const summaryText = new TextBlock();
     summaryText.size = TextSize.Default;
     summaryText.text = `${take(document.summary.split(' '), 50).join(' ')}...`;
     this.internalCard.addItem(summaryText);
     return this;
   }
-  public addConfidenceLevel(document: Document): DocumentCard {
+  public addConfidenceLevel(document: QueryResponse.Document): DocumentCard {
     const confidenceLevel = new TextBlock();
     confidenceLevel.text = `Confidence: ${document.scoreInPercent}`;
     confidenceLevel.size = TextSize.Small;
@@ -37,7 +36,7 @@ export default class DocumentCard {
     this.internalCard.addItem(confidenceLevel);
     return this;
   }
-  public addAction(document: Document): DocumentCard {
+  public addAction(document: QueryResponse.Document): DocumentCard {
     const action = new SubmitAction();
     action.data = { content: document.resourceURI };
     action.title = lang.getStringFor(lang.READ_MORE);
