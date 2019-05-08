@@ -41,7 +41,6 @@ export class CityBot {
   }
 
   async onTurn(turnContext: TurnContext) {
-    console.log('on turn');
     const dialogContext = await this.dialogs.createContext(turnContext);
     console.log(dialogContext.context.activity.channelData);
     if (
@@ -57,7 +56,6 @@ export class CityBot {
         'get_started'
       ) {
         // user clicked get_started
-        console.log('getting started');
         await this.welcomeUser(turnContext);
         await dialogContext.beginDialog(QuestionDialog.ID);
       }

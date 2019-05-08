@@ -129,7 +129,6 @@ server.use(restify.plugins.queryParser());
 
 // Listen for incoming activities and route them to your bot for processing.
 server.post('/api/messages', (req, res) => {
-  console.log('New request');
   adapter.processActivity(req, res, async turnContext => {
     // Call bot.onTurn() to handle all incoming messages.
     await bot.onTurn(turnContext);
