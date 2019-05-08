@@ -202,7 +202,7 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
       await step.beginDialog(QuestionDialog.ID);
     } else if (answer === 'Medewerker') {
       await this.handleEmployee(step.context);
-      return step.endDialog();
+      return await step.endDialog();
     }
   }
 
