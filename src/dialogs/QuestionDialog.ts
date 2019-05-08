@@ -144,51 +144,60 @@ export default class QuestionDialog extends WaterfallDialog {
 de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te drukken.`);
       if (step.context.activity.channelId === ChannelId.Facebook) {
         const fbCardBuilder = new FacebookCardBuilder();
-        resolved.documents.forEach((doc, i) => {
-          const td = new Turndown();
-          const desc = take(
-            td.turndown(doc.highlighting.join(' ')).split(' '),
-            50,
-          ).join(' ');
-          return fbCardBuilder.addCard(
-            new FacebookCard(`Document ${i}`, `${desc}...`, {
-              type: 'postback',
-              title: 'Download pdf',
-              payload: JSON.stringify({
-                type: 'download',
-                value: {
-                  uuid: doc.resourceURI,
-                },
-              }),
-            }),
-          );
-        });
-        await step.context.sendActivity(fbCardBuilder.getData());
-      } else {
-        const cards = map(resolved.documents, document => {
-          const td = new Turndown();
-          const desc = take(
-            td.turndown(document.highlighting.join(' ')).split(' '),
-            20,
-          ).join(' ');
-          return CardFactory.heroCard(
-            `${take(document.summary.split(' '), 5).join(' ')}...`,
-            `${desc}...`,
-            [],
-            [
-              {
-                type: 'messageBack',
-                title: 'download document',
-                value: JSON.stringify({
+        resolved.documents
+          .sort((a, b) => {
+            return a.scoreInPercent - b.scoreInPercent;
+          })
+          .forEach((doc, i) => {
+            const td = new Turndown();
+            const desc = take(
+              td.turndown(doc.highlighting.join(' ')).split(' '),
+              50,
+            ).join(' ');
+            return fbCardBuilder.addCard(
+              new FacebookCard(`Document ${i}`, `${desc}...`, {
+                type: 'postback',
+                title: 'Download pdf',
+                payload: JSON.stringify({
                   type: 'download',
                   value: {
-                    uuid: document.resourceURI,
+                    uuid: doc.resourceURI,
                   },
                 }),
-              },
-            ],
-          );
-        });
+              }),
+            );
+          });
+        await step.context.sendActivity(fbCardBuilder.getData());
+      } else {
+        const cards = map(
+          resolved.documents.sort((a, b) => {
+            return a.scoreInPercent - b.scoreInPercent;
+          }),
+          document => {
+            const td = new Turndown();
+            const desc = take(
+              td.turndown(document.highlighting.join(' ')).split(' '),
+              20,
+            ).join(' ');
+            return CardFactory.heroCard(
+              `${take(document.summary.split(' '), 5).join(' ')}...`,
+              `${desc}...`,
+              [],
+              [
+                {
+                  type: 'messageBack',
+                  title: 'download document',
+                  value: JSON.stringify({
+                    type: 'download',
+                    value: {
+                      uuid: document.resourceURI,
+                    },
+                  }),
+                },
+              ],
+            );
+          },
+        );
         await step.context.sendActivity(MessageFactory.carousel(cards));
       }
       await step.prompt('confirm_prompt', {
