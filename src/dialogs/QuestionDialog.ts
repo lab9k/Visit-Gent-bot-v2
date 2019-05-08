@@ -60,6 +60,10 @@ export default class QuestionDialog extends WaterfallDialog {
   private async handleStart(step: WaterfallStepContext) {
     if (step.context.activity.text === ConfirmTypes.NEGATIVE) {
       // ? user does not want to try
+      await step.context.sendActivity(
+        'Geen probleem. Misschien een volgende keer.' +
+          ' U kunt steeds hier terecht met uw vragen. Prettige dag verder. 👏',
+      );
       await step.endDialog();
     } else if (step.context.activity.text === ConfirmTypes.POSITIVE) {
       // ? user wants to try
