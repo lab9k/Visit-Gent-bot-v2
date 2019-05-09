@@ -236,20 +236,27 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
     if (answer === ConfirmTypes.POSITIVE) {
       await step.context.sendActivity(lang.getStringFor(lang.THANK_FEEDBACK));
       await step.context.sendActivity(lang.getStringFor(lang.MORE_QUESTIONS));
-      await step.endDialog();
       if (step.context.activity.channelId !== ChannelId.Facebook) {
+        await step.endDialog();
         await step.beginDialog(QuestionDialog.ID);
+      } else {
+        await step.cancelAllDialogs();
       }
     } else if (answer === ConfirmTypes.NEGATIVE) {
       await step.context.sendActivity(lang.getStringFor(lang.REPHRASE));
-      await step.endDialog();
       if (step.context.activity.channelId !== ChannelId.Facebook) {
+        await step.endDialog();
         await step.beginDialog(QuestionDialog.ID);
+      } else {
+        await step.cancelAllDialogs();
       }
     } else if (answer === 'Medewerker') {
       await this.handleEmployee(step.context);
       if (step.context.activity.channelId !== ChannelId.Facebook) {
+        await step.endDialog();
         await step.beginDialog(QuestionDialog.ID);
+      } else {
+        await step.cancelAllDialogs();
       }
     }
   }
