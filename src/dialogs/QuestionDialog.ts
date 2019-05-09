@@ -191,7 +191,7 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
             return CardFactory.heroCard(
               document.originalURI,
               `${desc}...`,
-              [{ url: process.env.CARD_LOGO || undefined }],
+              [{ url: encodeURI(process.env.CARD_LOGO) || undefined }],
               [
                 {
                   type: 'messageBack',
