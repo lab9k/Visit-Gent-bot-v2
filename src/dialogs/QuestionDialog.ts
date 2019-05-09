@@ -224,10 +224,17 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
     } else if (answer === ConfirmTypes.NEGATIVE) {
       await step.context.sendActivity(lang.getStringFor(lang.REPHRASE));
       await step.endDialog();
-      await step.beginDialog(QuestionDialog.ID);
+      if (step.context.activity.channelId !== ChannelId.Facebook) {
+        await step.beginDialog(QuestionDialog.ID);
+      }
     } else if (answer === 'Medewerker') {
       await this.handleEmployee(step.context);
-      return await step.endDialog();
+      if (step.context.activity.channelId !== ChannelId.Facebook) {
+        await step.endDialog();
+        await step.beginDialog(QuestionDialog.ID);
+      } else {
+        await step.cancelAllDialogs();
+      }
     }
   }
 
@@ -244,11 +251,9 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
       }
     } else if (answer === ConfirmTypes.NEGATIVE) {
       await step.context.sendActivity(lang.getStringFor(lang.REPHRASE));
+      await step.endDialog();
       if (step.context.activity.channelId !== ChannelId.Facebook) {
-        await step.endDialog();
         await step.beginDialog(QuestionDialog.ID);
-      } else {
-        await step.cancelAllDialogs();
       }
     } else if (answer === 'Medewerker') {
       await this.handleEmployee(step.context);
