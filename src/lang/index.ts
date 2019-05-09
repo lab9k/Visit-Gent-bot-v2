@@ -64,7 +64,7 @@ U kan op ieder moment opnieuw beginnen door op "Herstart" te klikken naast het i
     [this.READ_MORE]: ['Download pdf'],
     [this.ASK_CORRECT_CONCEPTS]: [
       'Ik heb documenten teruggevonden over: "%1%", is dit correct?',
-      'Ik heb een jouw vraag gelinkt aan de volgende concepten:\n"%1%"\nKlopt dit?',
+      'Ik heb jouw vraag gelinkt aan de volgende concepten:\n"%1%"\nKlopt dit?',
     ],
     [this.REPHRASE]: [
       `Kan je de vraag op een andere manier stellen zodat ik in het juiste domein ga zoeken?
