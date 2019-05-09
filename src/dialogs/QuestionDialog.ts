@@ -47,6 +47,7 @@ export default class QuestionDialog extends WaterfallDialog {
   }
 
   private async wantToStartQuestion(step: WaterfallStepContext) {
+    console.log(step.context.activity.text);
     await step.prompt('confirm_prompt', {
       choices: [
         { value: ConfirmTypes.POSITIVE },
@@ -76,7 +77,7 @@ export default class QuestionDialog extends WaterfallDialog {
     } else if (step.context.activity.text === 'Medewerker') {
       // ? User wants to talk to a person
       await this.handleEmployee(step.context);
-      await step.endDialog();
+      return await step.endDialog();
     }
   }
 
@@ -236,14 +237,20 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
       await step.context.sendActivity(lang.getStringFor(lang.THANK_FEEDBACK));
       await step.context.sendActivity(lang.getStringFor(lang.MORE_QUESTIONS));
       await step.endDialog();
-      await step.beginDialog(QuestionDialog.ID);
+      if (step.context.activity.channelId !== ChannelId.Facebook) {
+        await step.beginDialog(QuestionDialog.ID);
+      }
     } else if (answer === ConfirmTypes.NEGATIVE) {
       await step.context.sendActivity(lang.getStringFor(lang.REPHRASE));
       await step.endDialog();
-      await step.beginDialog(QuestionDialog.ID);
+      if (step.context.activity.channelId !== ChannelId.Facebook) {
+        await step.beginDialog(QuestionDialog.ID);
+      }
     } else if (answer === 'Medewerker') {
       await this.handleEmployee(step.context);
-      return await step.endDialog();
+      if (step.context.activity.channelId !== ChannelId.Facebook) {
+        await step.beginDialog(QuestionDialog.ID);
+      }
     }
   }
 
@@ -310,7 +317,7 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
   private async handleEmployee(context: TurnContext) {
     await context.sendActivity(
       `Uw vragen worden doorgestuurd naar een medewerker van uw stad of gemeente.
-      Prettige dag verder`,
+Prettige dag verder ☀️`,
     );
   }
 

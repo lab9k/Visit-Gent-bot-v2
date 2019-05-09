@@ -626,7 +626,7 @@
         "signature": "eaa8d56bff006bd59e748e0af3354f32a934f58db4835e0f1026e091087a49bf"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/lang/index.ts": {
-        "version": "fdc421033c222429625b18ed6b7a5965e588d8079e569bd37e707dec36a28f94",
+        "version": "6e0ac660401b9a73c6ed77c3b1207e3819bef2baab7a77291524a4e407190034",
         "signature": "6bebd6353857e1661ddd6cfc0d60068d24699e91a151b1a02b3c5fe652e98dd1"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/lang/conceptmapping.ts": {
@@ -654,7 +654,7 @@
         "signature": "b6ac027c5df9772d4f5e3b7cbdc0be580edefa06617e953a6705abb1a6a39cff"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/questiondialog.ts": {
-        "version": "c6f845952ecc128da5a96143ad1bd7d48020b6f0f8407f31491c610b6fb1d9e0",
+        "version": "28882c8d13aeb5f553da117484006e9c4f55d5c45c4c22781bb8ef7e93c61178",
         "signature": "2f92639b919976d5b251ed7ae536eb05dd1775dee83361754b9596769695291e"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/feedbacktypes.ts": {
@@ -674,7 +674,7 @@
         "signature": "2569a60a55851f2747f35c241226eb158655c1d36fd16f8fbf95110e29bea142"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/bot.ts": {
-        "version": "8cd8a66fdde5e20e732573ce1901583db08ae364d7f4186f2b3f6b5534bf0eed",
+        "version": "2cf3de85af54aea591e9ca84fb36b3a46f1fea3c3445f15a18aa6bcec433c1e5",
         "signature": "d803852a9445e69827ef1be7968ae6369a2ba91298fd25a1716a18fa943fbd08"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/dotenv/index.d.ts": {

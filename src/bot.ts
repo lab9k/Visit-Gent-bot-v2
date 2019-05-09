@@ -109,20 +109,7 @@ export class CityBot {
             dialogContext.context.activity.channelData.postback.payload,
           );
 
-          if (payload.type === 'feedback') {
-            await dialogContext.context.sendActivity(
-              `Merci voor de feedback: ${payload.value.state} op document: ${
-                payload.value.uuid
-              } en sessionId: ${payload.value.sessionid}`,
-            );
-            const airtableAPI = new AirtableApi();
-            airtableAPI.addLine({
-              document: payload.value.uuid,
-              feedback: payload.value.state,
-              question: payload.value.query,
-              sessionid: payload.value.sessionid,
-            });
-          } else if (payload.type === 'download') {
+          if (payload.type === 'download') {
             await this.questionDialog.sendFile(
               dialogContext,
               payload.value.uuid,
@@ -147,20 +134,7 @@ export class CityBot {
         const payload = JSON.parse(
           dialogContext.context.activity.value || '{}',
         );
-        if (payload.type === 'feedback') {
-          await dialogContext.context.sendActivity(
-            `Merci voor de feedback: ${payload.value.state} op document: ${
-              payload.value.uuid
-            } en sessionId: ${payload.value.sessionid}`,
-          );
-          const airtableApi = new AirtableApi();
-          airtableApi.addLine({
-            document: payload.value.uuid,
-            feedback: payload.value.state,
-            question: payload.value.query,
-            sessionid: payload.value.sessionid,
-          });
-        } else if (payload.type === 'download') {
+        if (payload.type === 'download') {
           await this.questionDialog.sendFile(dialogContext, payload.value.uuid);
           await dialogContext.repromptDialog();
         } else if (payload.type === 'highlight') {
@@ -179,7 +153,10 @@ export class CityBot {
   private async welcomeUser(turnContext: TurnContext) {
     // Do we have any new members added to the conversation?
     if (turnContext.activity.channelId !== ChannelId.Facebook) {
-      if (turnContext.activity.membersAdded.length !== 0) {
+      if (
+        turnContext.activity.membersAdded &&
+        turnContext.activity.membersAdded.length !== 0
+      ) {
         // Iterate over all new members added to the conversation
         for (const idx in turnContext.activity.membersAdded) {
           // Greet anyone that was not the target (recipient) of this message.
