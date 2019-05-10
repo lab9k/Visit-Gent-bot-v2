@@ -346,6 +346,7 @@ Prettige dag verder ☀️`,
   }
 
   private getBestParagraphForDoc(doc: QueryResponse.Document): string {
+    console.log(doc);
     const bestParagraph = doc.paragraphs.sort((a, b) => {
       return b.scoreInPercent - a.scoreInPercent;
     })[0];
