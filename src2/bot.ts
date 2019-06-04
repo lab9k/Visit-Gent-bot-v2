@@ -84,11 +84,7 @@ export class NalantisBot extends ActivityHandler {
         const payload = act.channelData.postback.payload;
         if (payload === 'get_started') {
           // ? Welcome new facebook user.
-          this.dialog.endDialog(
-            context,
-            { id: this.dialog.id, state: {} },
-            DialogReason.cancelCalled,
-          );
+          await this.dialogState.delete(context);
           // await this.userState.delete(context);
           // await this.conversationState.delete(context);
           await (this.dialog as MainDialog).run(
