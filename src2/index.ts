@@ -9,8 +9,10 @@ import {
   ConversationState,
   UserState,
   MemoryStorage,
+  ShowTypingMiddleware,
 } from 'botbuilder';
 import { BlobStorage } from 'botbuilder-azure';
+import { PayloadMiddleware } from './middleware/PayloadMiddleware';
 
 const ENV_FILE = path.join(__dirname, '..', '.env');
 config({ path: ENV_FILE });
@@ -57,6 +59,7 @@ if (process.env.NODE_ENV === 'production') {
 
 const dialog = new MainDialog(logger);
 const myBot = new NalantisBot(conversationState, userState, dialog, logger);
+adapter.use(new PayloadMiddleware());
 
 server.post('/api/messages', (req, res) => {
   adapter.processActivity(req, res, async context => {

@@ -4,6 +4,7 @@ import {
   UserState,
   StatePropertyAccessor,
   TurnContext,
+  MiddlewareSet,
 } from 'botbuilder';
 import { ILogger } from './logger';
 import {
@@ -40,24 +41,16 @@ export class NalantisBot extends ActivityHandler {
       'DialogState',
     );
     this.docsAccessor = this.userState.createProperty('resolved_data');
-
     this.onMessage(this.handleMessage.bind(this));
     this.onMembersAdded(this.handleMembersAdded.bind(this));
     this.onDialog(this.handleDialog.bind(this));
   }
 
-  private async handleMessage(
-    context: TurnContext,
-    next: () => Promise<void>,
-    exceptionDetected?: boolean,
-  ) {
+  private async handleMessage(context: TurnContext, next: () => Promise<void>) {
     this.logger.log('Running dialog with Message Activity.');
 
     // Run the Dialog with the new message Activity.
-    if (
-      !exceptionDetected &&
-      (await this.exceptionMessageOccured(context, next))
-    ) {
+    if (await this.exceptionMessageOccured(context, next)) {
       return;
     }
     await (this.dialog as MainDialog).run(
@@ -85,8 +78,6 @@ export class NalantisBot extends ActivityHandler {
         if (payload === 'get_started') {
           // ? Welcome new facebook user.
           await this.dialogState.delete(context);
-          // await this.userState.delete(context);
-          // await this.conversationState.delete(context);
           await (this.dialog as MainDialog).run(
             context,
             this.dialogState,
