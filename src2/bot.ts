@@ -6,7 +6,12 @@ import {
   TurnContext,
 } from 'botbuilder';
 import { ILogger } from './logger';
-import { Dialog, DialogState, DialogContext } from 'botbuilder-dialogs';
+import {
+  Dialog,
+  DialogState,
+  DialogContext,
+  DialogReason,
+} from 'botbuilder-dialogs';
 import { MainDialog } from './dialogs';
 import { checkNested, isFacebook, getBestParagraphForDoc } from './util';
 
@@ -79,8 +84,13 @@ export class NalantisBot extends ActivityHandler {
         const payload = act.channelData.postback.payload;
         if (payload === 'get_started') {
           // ? Welcome new facebook user.
-          await this.userState.delete(context);
-          await this.conversationState.delete(context);
+          this.dialog.endDialog(
+            context,
+            { id: this.dialog.id, state: {} },
+            DialogReason.cancelCalled,
+          );
+          // await this.userState.delete(context);
+          // await this.conversationState.delete(context);
           await (this.dialog as MainDialog).run(
             context,
             this.dialogState,
