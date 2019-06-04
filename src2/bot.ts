@@ -8,7 +8,7 @@ import {
 import { ILogger } from './logger';
 import { Dialog, DialogState, DialogContext } from 'botbuilder-dialogs';
 import { MainDialog } from './dialogs';
-import { checkNested, isFacebook } from './util';
+import { checkNested, isFacebook, getBestParagraphForDoc } from './util';
 
 export class NalantisBot extends ActivityHandler {
   private conversationState: BotState;
@@ -71,15 +71,48 @@ export class NalantisBot extends ActivityHandler {
     next: () => Promise<void>,
   ): Promise<boolean> {
     const act = context.activity;
-    if (
-      isFacebook(act) &&
-      checkNested(act.channelData, 'postback', 'payload') &&
-      act.channelData.postback.payload === 'get_started'
-    ) {
-      // ? Welcome new facebook user.
-      await context.sendActivity('Hello en welcome!');
-      await this.handleMessage(context, next, true);
-      return true;
+    if (isFacebook(act)) {
+      if (
+        checkNested(act.channelData, 'postback', 'payload') &&
+        act.channelData.postback.payload === 'get_started'
+      ) {
+        const payload = act.channelData.postback.payload;
+        if (payload === 'get_started') {
+          // ? Welcome new facebook user.
+          await context.sendActivity('Hello en welcome!');
+          await this.handleMessage(context, next, true);
+          return true;
+        }
+        const parsedPayload = JSON.parse(payload);
+        if (parsedPayload.type === 'download') {
+          // TODO: download
+          return true;
+        }
+        if (parsedPayload.type === 'highlight') {
+          const resolvedDocs = await this.docsAccessor.get(context);
+          const chosenDoc = resolvedDocs.documents.find(
+            d => d.resourceURI === parsedPayload.value.uuid,
+          );
+          const reply = getBestParagraphForDoc(chosenDoc);
+          await context.sendActivity(reply);
+          return true;
+        }
+      }
+    } else {
+      const parsedPayload = JSON.parse(act.value || '{}');
+      if (parsedPayload.type === 'download') {
+        // TODO: download
+        return true;
+      }
+      if (parsedPayload.type === 'highlight') {
+        const resolvedDocs = await this.docsAccessor.get(context);
+        const chosenDoc = resolvedDocs.documents.find(
+          d => d.resourceURI === parsedPayload.value.uuid,
+        );
+        const reply = getBestParagraphForDoc(chosenDoc);
+        await context.sendActivity(reply);
+        return true;
+      }
     }
 
     return false;
