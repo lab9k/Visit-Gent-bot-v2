@@ -41,7 +41,12 @@ export class NalantisBot extends ActivityHandler {
     this.onDialog(this.handleDialog.bind(this));
   }
 
-  private async handleMessage(context: TurnContext, next: () => Promise<void>) {
+  private async handleMessage(
+    context: TurnContext,
+    next: () => Promise<void>,
+    exceptionDetected?: boolean,
+  ) {
+    if (exceptionDetected) return;
     this.logger.log('Running dialog with Message Activity.');
 
     // Run the Dialog with the new message Activity.
@@ -69,7 +74,7 @@ export class NalantisBot extends ActivityHandler {
     ) {
       // ? Welcome new facebook user.
       await context.sendActivity('Hello en welcome!');
-      await this.handleMessage(context, next);
+      await this.handleMessage(context, next, true);
       return true;
     }
 
