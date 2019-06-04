@@ -79,8 +79,11 @@ export class NalantisBot extends ActivityHandler {
         const payload = act.channelData.postback.payload;
         if (payload === 'get_started') {
           // ? Welcome new facebook user.
-          await context.sendActivity('Hello en welcome!');
-          await this.handleMessage(context, next, true);
+          await (this.dialog as MainDialog).run(
+            context,
+            this.dialogState,
+            this.docsAccessor,
+          );
           return true;
         }
         const parsedPayload = JSON.parse(payload);
