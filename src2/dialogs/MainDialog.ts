@@ -64,26 +64,11 @@ export class MainDialog extends ComponentDialog {
     dialogSet.add(this);
 
     const dialogContext = await dialogSet.createContext(context);
-    if (await this.exceptionMessageOccured(dialogContext)) return;
     const results = await dialogContext.continueDialog();
 
     if (results.status === DialogTurnStatus.empty) {
       await dialogContext.beginDialog(this.id);
     }
-  }
-
-  private async exceptionMessageOccured(
-    dialogContext: DialogContext,
-  ): Promise<boolean> {
-    const act = dialogContext.context.activity;
-    if (
-      checkNested(act.channelData, 'postback', 'payload') &&
-      isFacebook(act) &&
-      act.channelData.postback.payload === 'get_started'
-    ) {
-    }
-
-    return false;
   }
 
   private async introStep(step: WaterfallStepContext) {

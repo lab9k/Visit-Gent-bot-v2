@@ -6,8 +6,9 @@ import {
   TurnContext,
 } from 'botbuilder';
 import { ILogger } from './logger';
-import { Dialog, DialogState } from 'botbuilder-dialogs';
+import { Dialog, DialogState, DialogContext } from 'botbuilder-dialogs';
 import { MainDialog } from './dialogs';
+import { checkNested, isFacebook } from './util';
 
 export class NalantisBot extends ActivityHandler {
   private conversationState: BotState;
@@ -44,6 +45,7 @@ export class NalantisBot extends ActivityHandler {
     this.logger.log('Running dialog with Message Activity.');
 
     // Run the Dialog with the new message Activity.
+    if (await this.exceptionMessageOccured(context, next)) return;
     await (this.dialog as MainDialog).run(
       context,
       this.dialogState,
@@ -54,6 +56,24 @@ export class NalantisBot extends ActivityHandler {
     await this.userState.saveChanges(context, false);
 
     await next();
+  }
+  private async exceptionMessageOccured(
+    context: TurnContext,
+    next: () => Promise<void>,
+  ): Promise<boolean> {
+    const act = context.activity;
+    if (
+      isFacebook(act) &&
+      checkNested(act.channelData, 'postback', 'payload') &&
+      act.channelData.postback.payload === 'get_started'
+    ) {
+      // ? Welcome new facebook user.
+      await context.sendActivity('Hello en welcome!');
+      await this.handleMessage(context, next);
+      return true;
+    }
+
+    return false;
   }
 
   private async handleMembersAdded(
