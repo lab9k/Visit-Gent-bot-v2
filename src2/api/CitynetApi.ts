@@ -1,4 +1,3 @@
-import axios from 'axios';
 import nodeFetch from 'node-fetch';
 import { URLSearchParams } from 'url';
 import * as moment from 'moment';

@@ -1,0 +1,1 @@
+export { MainDialog } from './MainDialog';
