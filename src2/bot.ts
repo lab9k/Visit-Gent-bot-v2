@@ -46,11 +46,15 @@ export class NalantisBot extends ActivityHandler {
     next: () => Promise<void>,
     exceptionDetected?: boolean,
   ) {
-    if (exceptionDetected) return;
     this.logger.log('Running dialog with Message Activity.');
 
     // Run the Dialog with the new message Activity.
-    if (await this.exceptionMessageOccured(context, next)) return;
+    if (
+      !exceptionDetected &&
+      (await this.exceptionMessageOccured(context, next))
+    ) {
+      return;
+    }
     await (this.dialog as MainDialog).run(
       context,
       this.dialogState,
