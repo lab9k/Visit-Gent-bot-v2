@@ -104,17 +104,9 @@ let userState = new UserState(memoryStorage);
 // CAUTION: You must ensure your product environment has the NODE_ENV set
 //          to use the Azure Blob storage or Azure Cosmos DB providers.
 if (process.env.NODE_ENV === 'production') {
-  // Storage configuration name or ID from .bot file
-  const STORAGE_CONFIGURATION_ID = '2';
-  // Default container name
-  const DEFAULT_BOT_CONTAINER = 'citybot';
-  // Get service configuration
-  const blobStorageConfig = {}; // botConfig.findServiceByNameOrId(
-  //   STORAGE_CONFIGURATION_ID,
-  // );
   const blobStorage = new BlobStorage({
-    containerName: blobStorageConfig['container'] || DEFAULT_BOT_CONTAINER,
-    storageAccountOrConnectionString: blobStorageConfig['connectionString'],
+    containerName: process.env.BLOB_NAME,
+    storageAccountOrConnectionString: process.env.BLOB_STRING,
   });
   conversationState = new ConversationState(blobStorage);
   userState = new UserState(blobStorage);
