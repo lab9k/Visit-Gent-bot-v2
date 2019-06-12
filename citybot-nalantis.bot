@@ -3,52 +3,16 @@
     "description": "",
     "services": [
         {
-            "type": "abs",
-            "tenantId": "c3c1e6bb-1ebf-4335-ad13-3419266a9781",
-            "subscriptionId": "9f3c9e4f-7451-44cc-80c0-258e49e49192",
-            "resourceGroup": "GGQaOCb-RG",
-            "serviceName": "citybot-nalantis",
-            "name": "citybot-nalantis",
-            "id": "1",
-            "appId": "7e603e00-2991-4b84-94b2-3afe8f29b5f3"
-        },
-        {
-            "type": "blob",
-            "connectionString": "4DChIFQLYLo3lPHwwvhYMQ==!QXm7rSlN8tpCWatOFw+g8miqaMiFSqRPASb9NOeyP3ipNj/6n0mJQ82lrYAmGflsZ75JDkA2b5gLVWfMLBZCrsWAXsagG+VMgcVJm5Lo+fkwtJqLxhohkPdMpc7t1sMZpReRdplRXoSC82YDfWBi56gYX2Ul7Qq6AqaHmK8GHqgy4WiVbTAFpRHfH5tYQN1JWvEhoG6e5EWtfLHFAxXXlsbjKe7tbP9H3mNQqHBTnSU=",
-            "tenantId": "c3c1e6bb-1ebf-4335-ad13-3419266a9781",
-            "subscriptionId": "9f3c9e4f-7451-44cc-80c0-258e49e49192",
-            "resourceGroup": "GGQaOCb-RG",
-            "serviceName": "citybotnalantisbeb4",
-            "id": "2"
-        },
-        {
-            "type": "endpoint",
-            "appId": "",
-            "appPassword": "",
-            "endpoint": "http://localhost:3978/api/messages",
-            "name": "development",
-            "id": "3"
-        },
-        {
             "type": "endpoint",
             "appId": "7e603e00-2991-4b84-94b2-3afe8f29b5f3",
-            "appPassword": "Dyk523zopUR2GbNOOKRhgA==!EwQp8tcc+fKFtfGQbiQSoPIHQL/PHHGLwZwmedQZd8U=",
-            "endpoint": "https://citybot-nalantis.azurewebsites.net/api/messages",
-            "name": "production",
-            "id": "4"
-        },
-        {
-            "type": "appInsights",
-            "instrumentationKey": "4E1w03lSQ9K9fkS3aG+IUg==!IRSX998Woo55z6xsu/Ohy4Pm1TufkYIqoxiHZHU2MIkjJHEXqzAFjNiLTA0FcbOt",
-            "applicationId": "3a65325b-aee5-4789-8456-330c73cab697",
-            "apiKeys": {},
-            "tenantId": "c3c1e6bb-1ebf-4335-ad13-3419266a9781",
-            "subscriptionId": "9f3c9e4f-7451-44cc-80c0-258e49e49192",
-            "resourceGroup": "GGQaOCb-RG",
-            "serviceName": "citybot-nalantis6yrjhp",
-            "id": "5"
+            "appPassword": "ZJYUCw.@FV!ZWKKV-?6x1^V0Xm[",
+            "endpoint": "http://localhost:3978/api/messages",
+            "id": "624f5b60-8ce8-11e9-86d1-ffe7c04797db",
+            "name": "http://localhost:3978/api/messages"
         }
     ],
-    "padlock": "Nv7qgAFV9fDWZLnJiP5eOw==!xB5ZSFcRUALEm4kVYT38zNrVpPA+93TyLEWfspuhFT9Kt4yLoUy+58TOJpWVKVMK",
-    "version": "2.0"
+    "padlock": "",
+    "version": "2.0",
+    "overrides": null,
+    "path": "/Users/willemje/Documents/Digipolis/Dev/chatbot-nalantis-v2/citybot-nalantis.bot"
 }
