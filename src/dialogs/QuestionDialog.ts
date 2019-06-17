@@ -24,6 +24,7 @@ import { FacebookCardBuilder, FacebookCard } from '../models/FacebookCard';
 import nodeFetch from 'node-fetch';
 import * as FormData from 'form-data';
 import * as Turndown from 'turndown';
+import CloudinaryApi from '../api/CloudinaryApi';
 
 export default class QuestionDialog extends WaterfallDialog {
   public static readonly ID = 'question_dialog';
@@ -301,13 +302,16 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
         `Ik stuur je de downloadlink onmiddelijk door.`,
       );
       try {
-        const res = await nodeFetch(`https://upfile.sh/${ret.filename}`, {
-          method: 'PUT',
-          body: fd,
-          headers: [['Max-Downloads', '10'], ['Max-Days', '5']],
-        });
-        const resText = await res.json();
-        return await dialogContext.context.sendActivity(`${resText.dow}`);
+        const res = await CloudinaryApi.upload(`./downloads/${ret.filename}`);
+        return await dialogContext.context.sendActivity(res.secure_url);
+
+        // const res = await nodeFetch(`https://upfile.sh/${ret.filename}`, {
+        //   method: 'PUT',
+        //   body: fd,
+        //   headers: [['Max-Downloads', '10'], ['Max-Days', '5']],
+        // });
+        // const resText = await res.json();
+        // return await dialogContext.context.sendActivity(`${resText.dow}`);
       } catch (error) {
         throw error;
       }

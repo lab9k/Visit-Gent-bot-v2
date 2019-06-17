@@ -20,6 +20,7 @@
     "botbuilder-azure": "^4.3.4",
     "botbuilder-dialogs": "^4.3.4",
     "botframework-config": "^4.3.4",
+    "cloudinary": "^1.14.0",
     "dotenv": "^6.2.0",
     "download": "^7.1.0",
     "flatted": "^2.0.0",
