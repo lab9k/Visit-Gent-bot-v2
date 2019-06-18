@@ -162,6 +162,7 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
               new FacebookCard(
                 doc.originalURI,
                 `${desc}...`,
+                this.options.cardUrl,
                 {
                   type: 'postback',
                   title: 'Download pdf',
@@ -196,7 +197,7 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
             return CardFactory.heroCard(
               document.originalURI,
               `${desc}...`,
-              [{ url: encodeURI(process.env.CARD_LOGO) || undefined }],
+              [{ url: encodeURI(this.options.cardUrl) || undefined }],
               [
                 {
                   type: 'messageBack',

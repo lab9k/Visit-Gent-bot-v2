@@ -43,6 +43,7 @@ export class FacebookCard {
   constructor(
     private title: string,
     private subtitle: string,
+    private cardUrl: string,
     ...buttons: DefaultAction[]
   ) {
     this.buttons = buttons;
@@ -52,7 +53,7 @@ export class FacebookCard {
       title: this.title,
       subtitle: this.subtitle,
       buttons: this.buttons,
-      image_url: process.env.CARD_LOGO || undefined,
+      image_url: this.cardUrl || undefined,
     };
   }
 }
