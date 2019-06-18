@@ -13,6 +13,8 @@ export default {
         {
           ...apiConfig,
           resource_type: 'auto',
+          use_filename: true,
+          unique_filename: false,
         },
         (error, resp) => {
           if (error) reject(error);
