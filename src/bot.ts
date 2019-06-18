@@ -40,7 +40,7 @@ export class CityBot {
     });
   }
 
-  async onTurn(turnContext: TurnContext) {
+  async onTurn(turnContext: TurnContext, options: any) {
     const dialogContext = await this.dialogs.createContext(turnContext);
     if (
       checkNested(
@@ -59,7 +59,7 @@ export class CityBot {
         await dialogContext.beginDialog(QuestionDialog.ID);
       }
     }
-    const options = {
+    const activityOptions = {
       [ActivityTypes.Message]: async () => {
         if (
           dialogContext.context.activity.text &&

@@ -123,7 +123,9 @@ server.use(restify.plugins.queryParser());
 server.post('/api/messages', (req, res) => {
   adapter.processActivity(req, res, async turnContext => {
     // Call bot.onTurn() to handle all incoming messages.
-    await bot.onTurn(turnContext);
+    console.log(req.body);
+    const options = {};
+    await bot.onTurn(turnContext, options);
   });
 });
 
