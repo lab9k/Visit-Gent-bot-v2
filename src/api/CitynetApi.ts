@@ -3,17 +3,20 @@ import nodeFetch from 'node-fetch';
 import { URLSearchParams } from 'url';
 import * as moment from 'moment';
 import * as download from 'download';
+import IOptions from '../models/IOptions';
 
 export default class CitynetApi {
   token: { value: string; date: any };
   baseUrl: string;
   constructor() {
     this.baseUrl = 'https://api.cloud.nalantis.com/api';
-    this.login();
   }
 
-  public async query(question: string): Promise<QueryResponse.QueryResponse> {
-    await this.login();
+  public async query(
+    question: string,
+    options: IOptions,
+  ): Promise<QueryResponse.QueryResponse> {
+    await this.login(options);
     let ret: QueryResponse.QueryResponse;
     try {
       const res = await nodeFetch(
@@ -42,10 +45,15 @@ export default class CitynetApi {
     return { ...ret, query: question };
   }
 
-  public async login(): Promise<{ value: string; date: string }> {
+  public async login(
+    options: IOptions,
+  ): Promise<{ value: string; date: string }> {
     if (!this.isTokenValid()) {
       const params = new URLSearchParams();
-      const { login, password } = this.getCredentials();
+      const { login, password } = {
+        login: options.citynet_login,
+        password: options.citynet_password,
+      };
       params.append('login', login);
       params.append('password', password);
       try {

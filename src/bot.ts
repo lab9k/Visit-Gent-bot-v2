@@ -12,6 +12,7 @@ import lang from './lang';
 import CorrectConceptPrompt from './dialogs/CorrectConceptPrompt';
 import { ChannelId } from './models/ChannelIds';
 import AirtableApi from './api/AirtableApi';
+import IOptions from './models/IOptions';
 
 const DIALOG_STATE_PROPERTY = 'dialog_state_prop';
 export class CityBot {
@@ -40,8 +41,9 @@ export class CityBot {
     });
   }
 
-  async onTurn(turnContext: TurnContext, options: any) {
+  async onTurn(turnContext: TurnContext, options: IOptions) {
     const dialogContext = await this.dialogs.createContext(turnContext);
+    this.questionDialog.setOptions(options);
     if (
       checkNested(
         dialogContext.context.activity.channelData,

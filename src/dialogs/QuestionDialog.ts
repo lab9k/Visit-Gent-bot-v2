@@ -25,10 +25,12 @@ import nodeFetch from 'node-fetch';
 import * as FormData from 'form-data';
 import * as Turndown from 'turndown';
 import CloudinaryApi from '../api/CloudinaryApi';
+import IOptions from '../models/IOptions';
 
 export default class QuestionDialog extends WaterfallDialog {
   public static readonly ID = 'question_dialog';
   private readonly api: CitynetApi;
+  private options: IOptions;
   private readonly docsAccessor: StatePropertyAccessor<
     QueryResponse.QueryResponse
   >;
@@ -105,6 +107,7 @@ export default class QuestionDialog extends WaterfallDialog {
     });
     const resolved: QueryResponse.QueryResponse = await this.api.query(
       step.context.activity.text,
+      this.options,
     );
 
     // ? break when no documents were found
@@ -359,5 +362,8 @@ Prettige dag verder ☀️`,
       : bestParagraph.content;
     const reply = td.turndown(p);
     return reply;
+  }
+  setOptions(options: IOptions) {
+    this.options = options;
   }
 }

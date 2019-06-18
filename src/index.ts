@@ -20,6 +20,7 @@ import { BlobStorage } from 'botbuilder-azure';
 import { BotConfiguration, IEndpointService } from 'botframework-config';
 
 import { CityBot } from './bot';
+import IOptions from './models/IOptions';
 
 // Read botFilePath and botFileSecret from .env file
 // Note: Ensure you have a .env file and include botFilePath and botFileSecret.
@@ -123,8 +124,19 @@ server.use(restify.plugins.queryParser());
 server.post('/api/messages', (req, res) => {
   adapter.processActivity(req, res, async turnContext => {
     // Call bot.onTurn() to handle all incoming messages.
-    console.log(req.body);
-    const options = {};
+
+    let fbPageId = '';
+    if (checkNested(req.body, 'channelData', 'recipient', 'id')) {
+      const {
+        body: {
+          channelData: {
+            recipient: { id },
+          },
+        },
+      } = req;
+      fbPageId = id;
+    }
+    const options = createOptions(fbPageId);
     await bot.onTurn(turnContext, options);
   });
 });
@@ -141,3 +153,37 @@ server.listen(process.env.port || process.env.PORT || 3978, () => {
   BOT_CONFIGURATION: ${BOT_CONFIGURATION}
   `);
 });
+function checkNested(obj: any, ...levels: string[]) {
+  for (let i = 0; i < levels.length; i += 1) {
+    if (!obj || !obj.hasOwnProperty(levels[i])) {
+      return false;
+    }
+    // tslint:disable-next-line:no-parameter-reassignment
+    obj = obj[levels[i]];
+  }
+  return true;
+}
+
+function createOptions(pageId: string): IOptions {
+  switch (pageId) {
+    case '304854067077825':
+      // citybotai page
+      return {
+        cardUrl:
+          'https://stad.gent/sites/all/themes/contrib/gent_base/img/png/logo--part1.png',
+        city: 'gent',
+        citynet_login: process.env.CITYNET_LOGIN_GENT,
+        citynet_password: process.env.CITYNET_PASSWORD_GENT,
+      };
+    case '417195555676339':
+      // citybot ieper page
+      return {
+        cardUrl: 'http://www.economieieper.be/images/logo.png',
+        city: 'ieper',
+        citynet_login: process.env.CITYNET_LOGIN_IEPER,
+        citynet_password: process.env.CITYNET_PASSWORD_IEPER,
+      };
+    default:
+      return createOptions('304854067077825');
+  }
+}
