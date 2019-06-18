@@ -84,7 +84,8 @@ export class CityBot {
         console.log('Unknown activity type, not an error');
       },
     };
-    await (options[turnContext.activity.type] || options.default)();
+    await (activityOptions[turnContext.activity.type] ||
+      activityOptions.default)();
     await this.saveChanges(turnContext);
   }
 
