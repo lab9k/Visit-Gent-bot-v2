@@ -2,8 +2,8 @@
   "program": {
     "fileInfos": {
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/typescript/lib/lib.es5.d.ts": {
-        "version": "c8665e66018917580e71792b91022bcaf53fb946fab4aaf8dfb0738ed564db88",
-        "signature": "c8665e66018917580e71792b91022bcaf53fb946fab4aaf8dfb0738ed564db88"
+        "version": "1f753cee573dea40df8a9dc873fef5566957b19ad513874f6643d8dfb14842d0",
+        "signature": "1f753cee573dea40df8a9dc873fef5566957b19ad513874f6643d8dfb14842d0"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/typescript/lib/lib.es2015.d.ts": {
         "version": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96",
@@ -14,12 +14,12 @@
         "signature": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/typescript/lib/lib.dom.d.ts": {
-        "version": "6994c583b66862deca24d7bbf77297d95b9d3da8160dbd9beef6b847cf7c1376",
-        "signature": "6994c583b66862deca24d7bbf77297d95b9d3da8160dbd9beef6b847cf7c1376"
+        "version": "973df4e41aea3780ce77073777d37dd5896f684124f4c42409f3a832133837a4",
+        "signature": "973df4e41aea3780ce77073777d37dd5896f684124f4c42409f3a832133837a4"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/typescript/lib/lib.dom.iterable.d.ts": {
-        "version": "4c892766803cef795d73d69aee436dc7a80157163e0cf35e6d0e86917cbd42f3",
-        "signature": "4c892766803cef795d73d69aee436dc7a80157163e0cf35e6d0e86917cbd42f3"
+        "version": "eb843da29336c7d5840bb439b24cf68a4a1652fd01c6e4e66ec74d8b136e944a",
+        "signature": "eb843da29336c7d5840bb439b24cf68a4a1652fd01c6e4e66ec74d8b136e944a"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": {
         "version": "fe4e59403e34c7ff747abe4ff6abbc7718229556d7c1a5b93473fb53156c913b",
@@ -30,8 +30,8 @@
         "signature": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/typescript/lib/lib.es2015.core.d.ts": {
-        "version": "384f66a3422d80014c51de2682159bb26f1e35854029880ccd5f6d1f00e6a36d",
-        "signature": "384f66a3422d80014c51de2682159bb26f1e35854029880ccd5f6d1f00e6a36d"
+        "version": "2a0390a665763bcc90f0670e43c587928d8fefe2a94a11209c1e22cba7b09f52",
+        "signature": "2a0390a665763bcc90f0670e43c587928d8fefe2a94a11209c1e22cba7b09f52"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/typescript/lib/lib.es2015.collection.d.ts": {
         "version": "dd94d8ef48c562389eb58af8df3a3a34d11367f7c818192aa5f16470d469e3f0",
@@ -42,12 +42,12 @@
         "signature": "828413486bdcaa342558e8e4570b1b287b776cb61b4b70b0214bd10c5d9a94c3"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
-        "version": "4d1f39313a169b8599b8817688f504b56ba8204c2ebafd03f66ff77ddb1899a4",
-        "signature": "4d1f39313a169b8599b8817688f504b56ba8204c2ebafd03f66ff77ddb1899a4"
+        "version": "6c9f73334f8bf47aea685ca5b46a8f7e992a223e96fbceb030f26a4d2324ba21",
+        "signature": "6c9f73334f8bf47aea685ca5b46a8f7e992a223e96fbceb030f26a4d2324ba21"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/typescript/lib/lib.es2015.promise.d.ts": {
-        "version": "7c07d934680d0e33275a44d22fb11a4ff31d46c8c26a8d056828a478753f1efe",
-        "signature": "7c07d934680d0e33275a44d22fb11a4ff31d46c8c26a8d056828a478753f1efe"
+        "version": "e6b8ff2798f8ebd7a1c7afd8671f2cb67ee1901c422f5964d74b0b34c6574ea2",
+        "signature": "e6b8ff2798f8ebd7a1c7afd8671f2cb67ee1901c422f5964d74b0b34c6574ea2"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
         "version": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe",
@@ -550,8 +550,8 @@
         "signature": "9e3fe6984646bdf23f74168b1020f434b12269fa8c6413718694a508fa437691"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/axios/index.d.ts": {
-        "version": "7d04801f5ace7a92365ca303eaf7ac2adab6b4c52d9779c8d90824e5218ddc78",
-        "signature": "7d04801f5ace7a92365ca303eaf7ac2adab6b4c52d9779c8d90824e5218ddc78"
+        "version": "9b3812f5ae5c9c8c9daf7107e1041f4ad9d19aebd12b738a81f22a1ac1f5e371",
+        "signature": "9b3812f5ae5c9c8c9daf7107e1041f4ad9d19aebd12b738a81f22a1ac1f5e371"
       },
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node-fetch/index.d.ts": {
         "version": "a9c34b0124b94baaf119cec66ad9c8f0ce57c233399a68e8d7622224fea17fcb",
@@ -1786,96 +1786,92 @@
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/activityinterfaces.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/activityhandler.d.ts": [
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/models/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/connectorclient.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/connectorclientcontext.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/models/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/models/mappers.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/operations/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/connectorclient.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/tokenapiclient.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/emulatorapiclient.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/botframeworkadapter.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/botframeworkadapter.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/filetranscriptstore.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/middlewareset.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/azureblobtranscriptstore.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/blobstorage.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botadapter.d.ts": [
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/cosmosdbstorage.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/blobstorage.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/azureblobtranscriptstore.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/cosmosdbkeyescape.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/blobstorage.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/cosmosdbstorage.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/bot.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/ioptions.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/questiondialog.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/ioptions.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/operations/conversations.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/connectorclientcontext.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/models/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/operations/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/operations/attachments.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/operations/conversations.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/operations/attachments.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/connectorclientcontext.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/models/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/connectorclientcontext.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/models/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/jwttokenvalidation.d.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/middlewareset.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/claimsidentity.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/credentialprovider.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botadapter.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstatepropertyaccessor.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstate.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/propertymanager.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstatepropertyaccessor.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/storage.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstate.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstatepropertyaccessor.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/propertymanager.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/storage.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstateset.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstate.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/autosavestatemiddleware.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstate.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstateset.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/middlewareset.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/memorystorage.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/storage.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/browserstorage.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/memorystorage.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/cardfactory.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/conversationstate.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstate.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/storage.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/transcriptlogger.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/middlewareset.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/memorytranscriptstore.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/transcriptlogger.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/messagefactory.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/privateconversationstate.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstate.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/storage.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/showtypingmiddleware.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/middlewareset.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/usertokenprovider.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/testadapter.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botadapter.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/usertokenprovider.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/userstate.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstate.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/storage.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/credentialprovider.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/microsoftappcredentials.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/jwttokenvalidation.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/channelvalidation.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/governmentchannelvalidation.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/governmentconstants.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/enterprisechannelvalidation.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/emulatorvalidation.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/endorsementsvalidator.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/claimsidentity.d.ts"
       ],
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts",
@@ -1904,6 +1900,243 @@
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/userstate.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/usertokenprovider.d.ts"
       ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/waterfalldialog.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/waterfallstepcontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/componentdialog.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogset.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/waterfalldialog.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/waterfallstepcontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/correctconceptprompt.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/feedbackprompt.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/componentdialog.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/textprompt.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/activityprompt.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/attachmentprompt.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/choiceprompt.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/confirmprompt.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/datetimeprompt.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/numberprompt.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/oauthprompt.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/textprompt.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogset.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/waterfallstepcontext.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/oauthprompt.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/activityprompt.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/numberprompt.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/datetimeprompt.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/confirmprompt.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/choiceprompt.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/attachmentprompt.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogset.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/choicefactory.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/findchoices.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/choicefactory.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/findchoices.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/findvalues.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/modelresult.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/recognizechoices.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/tokenizer.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/findchoices.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/findvalues.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/modelresult.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/recognizechoices.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/findchoices.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/modelresult.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/filetranscriptstore.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/activityhandler.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/testadapter.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botadapter.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/usertokenprovider.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/usertokenprovider.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/messagefactory.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/memorytranscriptstore.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/transcriptlogger.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/transcriptlogger.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/middlewareset.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/cardfactory.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botadapter.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/userstate.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstate.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/storage.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/showtypingmiddleware.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/middlewareset.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/privateconversationstate.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstate.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/storage.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/conversationstate.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstate.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/storage.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/autosavestatemiddleware.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstate.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstateset.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/middlewareset.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstateset.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstate.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstate.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstatepropertyaccessor.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/propertymanager.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/storage.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstatepropertyaccessor.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstate.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/propertymanager.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botstatepropertyaccessor.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/storage.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/memorystorage.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/storage.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/browserstorage.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/memorystorage.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/botadapter.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/middlewareset.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/middlewareset.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/turncontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/emulatorvalidation.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/jsonwebtoken/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/claimsidentity.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/credentialprovider.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/enterprisechannelvalidation.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/jsonwebtoken/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/claimsidentity.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/credentialprovider.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/governmentchannelvalidation.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/jsonwebtoken/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/claimsidentity.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/credentialprovider.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/channelvalidation.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/jsonwebtoken/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/claimsidentity.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/credentialprovider.d.ts"
+      ],
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/inspector.d.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
       ],
@@ -1911,22 +2144,41 @@
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/inspector.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationparameter.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/querycollectionformat.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/serializer.d.ts"
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/restify/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/bunyan/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/spdy/index.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationresponse.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/serializer.d.ts"
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/spdy/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationspec.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationparameter.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationresponse.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/serializer.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts"
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/bunyan/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpheaders.d.ts",
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/dotenv/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/form-data/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/api/citynetapi.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/ioptions.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/download/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/decompress/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/got/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/got/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/decompress/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node-fetch/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/jsonwebtoken/index.d.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
       ],
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts": [
@@ -1936,107 +2188,6 @@
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationresponse.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httppipelinelogger.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httppipelineloglevel.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httppipelinelogger.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httppipelineloglevel.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpclient.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/axioshttpclient.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpclient.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/defaulthttpclient.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/axioshttpclient.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/resterror.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationarguments.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/serviceclientcredentials.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/deserializationpolicy.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/util/utils.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/resterror.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/serviceclient.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/serviceclientcredentials.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpclient.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httppipelinelogger.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationarguments.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationparameter.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationspec.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/deserializationpolicy.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/serializer.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationresponse.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/util/utils.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/logpolicy.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/exponentialretrypolicy.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/systemerrorretrypolicy.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/redirectpolicy.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/signingpolicy.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/serviceclientcredentials.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/useragentpolicy.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/tokencredentials.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/serviceclientcredentials.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/basicauthenticationcredentials.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/serviceclientcredentials.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/apikeycredentials.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/serviceclientcredentials.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/topiccredentials.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/apikeycredentials.d.ts"
       ],
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
@@ -2072,95 +2223,11 @@
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/topiccredentials.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/credentials.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/microsoftappcredentials.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/jwttokenvalidation.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/claimsidentity.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/credentialprovider.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/jsonwebtoken/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/channelvalidation.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/jsonwebtoken/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/claimsidentity.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/credentialprovider.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/governmentchannelvalidation.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/jsonwebtoken/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/claimsidentity.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/credentialprovider.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/enterprisechannelvalidation.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/jsonwebtoken/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/claimsidentity.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/credentialprovider.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/emulatorvalidation.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/jsonwebtoken/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/claimsidentity.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/credentialprovider.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/credentialprovider.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/microsoftappcredentials.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/jwttokenvalidation.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/channelvalidation.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/governmentchannelvalidation.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/governmentconstants.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/enterprisechannelvalidation.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/emulatorvalidation.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/endorsementsvalidator.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/claimsidentity.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/models/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-schema/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/connectorclientcontext.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/models/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/models/mappers.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/operations/attachments.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/connectorclientcontext.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/models/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/operations/conversations.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/connectorclientcontext.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/models/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/operations/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/operations/attachments.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/operations/conversations.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/connectorclient.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/connectorclientcontext.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/models/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/models/mappers.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/operations/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/models/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/models/mappers.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/tokenapiclientcontext.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/models/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/operations/botsignin.d.ts": [
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/tokenapiclient.d.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/models/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/models/mappers.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/operations/index.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/tokenapiclientcontext.d.ts"
       ],
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/operations/usertoken.d.ts": [
@@ -2172,176 +2239,314 @@
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/operations/botsignin.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/operations/usertoken.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/tokenapiclient.d.ts": [
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/operations/botsignin.d.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/models/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/models/mappers.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/operations/index.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/tokenapiclientcontext.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/tokenapiclientcontext.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/models/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/models/mappers.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/models/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/models/mappers.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/microsoftappcredentials.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/msrest.d.ts"
       ],
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/emulatorapiclient.d.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/microsoftappcredentials.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/auth/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/connectorapi/connectorclient.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/tokenapi/tokenapiclient.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/emulatorapiclient.d.ts"
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/apikeycredentials.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/serviceclientcredentials.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/botframeworkadapter.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-connector/lib/index.d.ts"
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/topiccredentials.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/apikeycredentials.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/filetranscriptstore.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts"
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/basicauthenticationcredentials.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/serviceclientcredentials.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/botframeworkadapter.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/filetranscriptstore.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts"
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/tokencredentials.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/serviceclientcredentials.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/useragentpolicy.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/signingpolicy.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/serviceclientcredentials.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/redirectpolicy.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/systemerrorretrypolicy.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/exponentialretrypolicy.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/logpolicy.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/serviceclient.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/serviceclientcredentials.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpclient.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httppipelinelogger.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationarguments.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationparameter.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationspec.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/deserializationpolicy.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/serializer.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationresponse.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/util/utils.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/util/utils.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/resterror.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/deserializationpolicy.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/credentials/serviceclientcredentials.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationarguments.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/resterror.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/axioshttpclient.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpclient.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/defaulthttpclient.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/axioshttpclient.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httppipelinelogger.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httppipelineloglevel.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpclient.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/policies/requestpolicy.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpoperationresponse.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httpheaders.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationspec.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationparameter.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationresponse.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/serializer.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/webresource.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationparameter.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/querycollectionformat.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/serializer.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/operationresponse.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/serializer.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httppipelinelogger.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@azure/ms-rest-js/es/lib/httppipelineloglevel.d.ts"
       ],
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/findvalues.d.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/modelresult.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/tokenizer.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/findchoices.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/findvalues.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/modelresult.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/choicefactory.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/findchoices.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/recognizechoices.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/findchoices.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/modelresult.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/choicefactory.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/findchoices.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/findvalues.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/modelresult.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/recognizechoices.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/tokenizer.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogset.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogset.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/activityprompt.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/attachmentprompt.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/choiceprompt.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/confirmprompt.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/datetimeprompt.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/numberprompt.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/oauthprompt.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/textprompt.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/activityprompt.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/attachmentprompt.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/choiceprompt.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/confirmprompt.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/datetimeprompt.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/numberprompt.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/oauthprompt.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/prompt.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/textprompt.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/componentdialog.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/waterfallstepcontext.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/waterfalldialog.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-core/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/waterfallstepcontext.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/choices/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/prompts/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialog.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/componentdialog.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogcontext.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/dialogset.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/waterfalldialog.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/waterfallstepcontext.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node-fetch/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/decompress/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/got/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/download/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/decompress/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/got/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/api/citynetapi.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/ioptions.ts"
-      ],
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/documentcard.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/adaptivecards.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
@@ -2366,250 +2571,23 @@
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/date.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/function.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/lang.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/math.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/number.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/object.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/seq.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/string.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/util.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/form-data/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/questiondialog.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/ioptions.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/feedbackprompt.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/dialogs/correctconceptprompt.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-dialogs/lib/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/bot.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/ioptions.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/dotenv/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/bunyan/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/spdy/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/restify/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/node/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/bunyan/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/spdy/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/cosmosdbstorage.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/blobstorage.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/index.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/azureblobtranscriptstore.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder/lib/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/blobstorage.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/cosmosdbstorage.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/blobstorage.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/azureblobtranscriptstore.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botbuilder-azure/lib/cosmosdbkeyescape.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/connectedservice.d.ts": [
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/index.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/botconfiguration.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/botconfigurationbase.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/botrecipe.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/index.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/azureservice.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/connectedservice.d.ts"
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/botrecipe.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/appinsightsservice.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/azureservice.d.ts"
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/botconfiguration.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/botconfigurationbase.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/blobstorageservice.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/azureservice.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/botservice.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/azureservice.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/cosmosdbservice.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/azureservice.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/luisservice.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/connectedservice.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/dispatchservice.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/luisservice.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/endpointservice.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/connectedservice.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/fileservice.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/connectedservice.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/genericservice.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/connectedservice.d.ts"
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/botconfigurationbase.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/index.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts"
       ],
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/qnamakerservice.d.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
@@ -2628,34 +2606,48 @@
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/luisservice.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/qnamakerservice.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/botconfigurationbase.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/index.d.ts",
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/genericservice.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/connectedservice.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/fileservice.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/connectedservice.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/endpointservice.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/connectedservice.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/dispatchservice.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/luisservice.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/luisservice.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/connectedservice.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/cosmosdbservice.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/azureservice.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/botservice.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/azureservice.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/blobstorageservice.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/azureservice.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/appinsightsservice.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/azureservice.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/azureservice.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/connectedservice.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/connectedservice.d.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/botconfiguration.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/botconfigurationbase.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/botrecipe.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/index.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/botconfiguration.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/botconfigurationbase.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/botrecipe.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/models/index.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/botframework-config/lib/schema.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/utils.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/enums.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/host-config.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/enums.d.ts"
-      ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/card-elements.d.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/enums.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/utils.d.ts",
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/host-config.d.ts"
       ],
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/adaptivecards.d.ts": [
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/card-elements.d.ts",
@@ -2664,8 +2656,16 @@
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/utils.d.ts",
         "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/schema.d.ts"
       ],
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/documentcard.ts": [
-        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/adaptivecards.d.ts"
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/card-elements.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/enums.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/utils.d.ts",
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/host-config.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/host-config.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/enums.d.ts"
+      ],
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/utils.d.ts": [
+        "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/enums.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -2813,6 +2813,7 @@
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/got/index.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/download/index.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/ioptions.ts",
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/api/citynetapi.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/common.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/array.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/@types/lodash/common/collection.d.ts",
@@ -2876,9 +2877,8 @@
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/schema.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/node_modules/adaptivecards/lib/adaptivecards.d.ts",
       "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/documentcard.ts",
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/queryresponse.ts",
-      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/api/citynetapi.ts"
+      "/users/willemje/documents/digipolis/dev/chatbot-nalantis-v2/src/models/queryresponse.ts"
     ]
   },
-  "version": "3.4.5"
+  "version": "3.5.2"
 }
