@@ -57,7 +57,7 @@ export default class CitynetApi {
       params.append('login', login);
       params.append('password', password);
       try {
-        const { headers } = await nodeFetch(
+        const { headers, body } = await nodeFetch(
           'https://api.cloud.nalantis.com/auth/v2/users/login',
           {
             method: 'POST',
