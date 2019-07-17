@@ -183,7 +183,7 @@ function createOptions(pageId: string): IOptions {
         citynet_login: process.env.CITYNET_LOGIN_IEPER,
         citynet_password: process.env.CITYNET_PASSWORD_IEPER,
       };
-    case '':
+    case '2365819600357103':
       return {
         cardUrl: 'https://www.wingene.be/images/skin/logo.svg',
         city: 'wingene',
