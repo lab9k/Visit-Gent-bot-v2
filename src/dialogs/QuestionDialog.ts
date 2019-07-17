@@ -354,10 +354,14 @@ Prettige dag verder ☀️`,
   }
 
   private getBestParagraphForDoc(doc: QueryResponse.Document): string {
+    const td = new Turndown();
+    if (!doc.paragraphs) {
+      return td.turndown(doc.summary);
+    }
     const bestParagraph = doc.paragraphs.sort((a, b) => {
       return b.scoreInPercent - a.scoreInPercent;
     })[0];
-    const td = new Turndown();
+
     const p = bestParagraph.highlighting
       ? bestParagraph.highlighting.join(' ')
       : bestParagraph.content;
