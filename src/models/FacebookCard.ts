@@ -30,6 +30,10 @@ export class FacebookCardBuilder {
   public getData(): any {
     return this.data;
   }
+
+  public isEmpty(): boolean {
+    return this.data.channelData.attachment.payload.elements.length === 0;
+  }
 }
 
 interface DefaultAction {

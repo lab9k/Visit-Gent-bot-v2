@@ -26,6 +26,7 @@ import * as FormData from 'form-data';
 import * as Turndown from 'turndown';
 import CloudinaryApi from '../api/CloudinaryApi';
 import IOptions from '../models/IOptions';
+import { DocumentErrors } from '../models/DocumentErrors';
 
 export default class QuestionDialog extends WaterfallDialog {
   public static readonly ID = 'question_dialog';
@@ -158,35 +159,43 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
           })
           .forEach((doc, i) => {
             const desc = this.getBestParagraphForDoc(doc);
-            return fbCardBuilder.addCard(
-              new FacebookCard(
-                doc.originalURI,
-                `${desc}...`,
-                this.options.cardUrl,
-                {
-                  type: 'postback',
-                  title: 'Download pdf',
-                  payload: JSON.stringify({
-                    type: 'download',
-                    value: {
-                      uuid: doc.resourceURI,
-                    },
-                  }),
-                },
-                {
-                  type: 'postback',
-                  title: 'Paragraaf',
-                  payload: JSON.stringify({
-                    type: 'highlight',
-                    value: {
-                      uuid: doc.resourceURI,
-                    },
-                  }),
-                },
-              ),
-            );
+            if (desc !== DocumentErrors.NO_DOC_FOUND) {
+              return fbCardBuilder.addCard(
+                new FacebookCard(
+                  doc.originalURI,
+                  `${desc}...`,
+                  this.options.cardUrl,
+                  {
+                    type: 'postback',
+                    title: 'Download pdf',
+                    payload: JSON.stringify({
+                      type: 'download',
+                      value: {
+                        uuid: doc.resourceURI,
+                      },
+                    }),
+                  },
+                  {
+                    type: 'postback',
+                    title: 'Paragraaf',
+                    payload: JSON.stringify({
+                      type: 'highlight',
+                      value: {
+                        uuid: doc.resourceURI,
+                      },
+                    }),
+                  },
+                ),
+              );
+            }
           });
-        await step.context.sendActivity(fbCardBuilder.getData());
+        if (!fbCardBuilder.isEmpty()) {
+          await step.context.sendActivity(fbCardBuilder.getData());
+        } else {
+          await step.context.sendActivity(
+            'Ik je vraag begrepen, maar geen documenten gevonden.',
+          );
+        }
       } else {
         const cards = map(
           resolved.documents.sort((a, b) => {
@@ -194,32 +203,40 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
           }),
           document => {
             const desc = this.getBestParagraphForDoc(document);
-            return CardFactory.heroCard(
-              document.originalURI,
-              `${desc}...`,
-              [{ url: encodeURI(this.options.cardUrl) || undefined }],
-              [
-                {
-                  type: 'messageBack',
-                  title: 'download document',
-                  value: JSON.stringify({
-                    type: 'download',
-                    value: { uuid: document.resourceURI },
-                  }),
-                },
-                {
-                  type: 'messageBack',
-                  title: 'Paragraaf',
-                  value: JSON.stringify({
-                    type: 'highlight',
-                    value: { uuid: document.resourceURI },
-                  }),
-                },
-              ],
-            );
+            if (desc !== DocumentErrors.NO_DOC_FOUND) {
+              return CardFactory.heroCard(
+                document.originalURI,
+                `${desc}...`,
+                [{ url: encodeURI(this.options.cardUrl) || undefined }],
+                [
+                  {
+                    type: 'messageBack',
+                    title: 'download document',
+                    value: JSON.stringify({
+                      type: 'download',
+                      value: { uuid: document.resourceURI },
+                    }),
+                  },
+                  {
+                    type: 'messageBack',
+                    title: 'Paragraaf',
+                    value: JSON.stringify({
+                      type: 'highlight',
+                      value: { uuid: document.resourceURI },
+                    }),
+                  },
+                ],
+              );
+            }
           },
         );
-        await step.context.sendActivity(MessageFactory.carousel(cards));
+        if (cards.length > 0) {
+          await step.context.sendActivity(MessageFactory.carousel(cards));
+        } else {
+          await step.context.sendActivity(
+            'Ik je vraag begrepen, maar geen documenten gevonden.',
+          );
+        }
       }
       await step.prompt('confirm_prompt', {
         prompt: 'Hebt u gevonden wat u zocht?',
@@ -356,7 +373,7 @@ Prettige dag verder ☀️`,
   private getBestParagraphForDoc(doc: QueryResponse.Document): string {
     const td = new Turndown();
     if (!doc.paragraphs) {
-      return td.turndown(doc.summary);
+      return DocumentErrors.NO_DOC_FOUND;
     }
     const bestParagraph = doc.paragraphs.sort((a, b) => {
       return b.scoreInPercent - a.scoreInPercent;
