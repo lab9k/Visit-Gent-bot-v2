@@ -385,7 +385,7 @@ Prettige dag verder ☀️`,
     //   : bestParagraph.content;
     // const reply = td.turndown(p);
     // return reply;
-    const highlight = doc.highlighting ? doc.highlighting[0] : doc.summary;
+    const highlight = doc.summary;
     return td.turndown(highlight);
   }
 
