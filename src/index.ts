@@ -137,6 +137,7 @@ server.post('/api/messages', (req, res) => {
       fbPageId = id;
     }
     const options = createOptions(fbPageId);
+    console.log(`Options were generated for: ${options.city}`);
     await bot.onTurn(turnContext, options);
   });
 });
@@ -165,6 +166,7 @@ function checkNested(obj: any, ...levels: string[]) {
 }
 
 function createOptions(pageId: string): IOptions {
+  console.log(`Creating settings for page with id: ${pageId}`);
   switch (pageId) {
     case '304854067077825':
       // citybotai page
