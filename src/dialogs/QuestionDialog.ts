@@ -306,7 +306,7 @@ de notulen van de Gemeenteraad. U kan de bestanden downloaden door op de knop te
     const resourceUri: string = uuid;
 
     console.log('downloading');
-    const ret = await this.api.downloadFile(resourceUri);
+    const ret = await this.api.downloadFile(resourceUri, this.options);
 
     const filedata = readFileSync(`./downloads/${ret.filename}`);
     const base64file = Buffer.from(filedata).toString('base64');

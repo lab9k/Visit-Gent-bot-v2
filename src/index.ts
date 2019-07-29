@@ -166,7 +166,7 @@ function checkNested(obj: any, ...levels: string[]) {
 }
 
 function createOptions(pageId: string): IOptions {
-  console.log(`Creating settings for page with id: ${pageId}`);
+  console.log(`Creating settings for page with id: ${pageId}\n`);
   switch (pageId) {
     case '304854067077825':
       // citybotai page
