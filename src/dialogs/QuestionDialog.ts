@@ -372,20 +372,13 @@ Prettige dag verder ☀️`,
 
   private getBestParagraphForDoc(doc: QueryResponse.Document): string {
     const td = new Turndown();
-    // if (!doc.paragraphs) {
-    //   return DocumentErrors.NO_DOC_FOUND;
-    // }
+    let highlight = '';
+    if (doc.paragraphs && doc.paragraphs.length > 0) {
+      highlight = td.turndown(doc.paragraphs[0].content);
+    } else {
+      highlight = td.turndown(doc.summary);
+    }
 
-    // const bestParagraph = doc.paragraphs.sort((a, b) => {
-    //   return b.scoreInPercent - a.scoreInPercent;
-    // })[0];
-
-    // const p = bestParagraph.highlighting
-    //   ? bestParagraph.highlighting.join(' ')
-    //   : bestParagraph.content;
-    // const reply = td.turndown(p);
-    // return reply;
-    const highlight = doc.summary;
     return td.turndown(highlight);
   }
 
