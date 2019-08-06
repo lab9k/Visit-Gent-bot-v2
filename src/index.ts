@@ -192,6 +192,14 @@ function createOptions(pageId: string): IOptions {
         citynet_login: process.env.CITYNET_LOGIN_WINGENE,
         citynet_password: process.env.CITYNET_PASSWORD_WINGENE,
       };
+    case '2381643562162487':
+      return {
+        cardUrl:
+          'https://www.deerlijk.be/themes/custom/ocp_theme_deerlijk/assets/dist/img/logo.png',
+        city: 'deerlijk',
+        citynet_login: process.env.CITYNET_LOGIN_DEERLIJK,
+        citynet_password: process.env.CITYNET_PASSWORD_DEERLIJK,
+      };
     default:
       return createOptions('304854067077825'); // Gent
     // return createOptions('2365819600357103'); // Wingene
