@@ -17,7 +17,6 @@ import {
 import { BlobStorage } from 'botbuilder-azure';
 
 // Import required bot configuration.
-import { BotConfiguration, IEndpointService } from 'botframework-config';
 
 import { CityBot } from './bot';
 import IOptions from './models/IOptions';
