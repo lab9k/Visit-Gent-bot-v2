@@ -23,7 +23,7 @@ export default class CitynetApi {
           headers: {
             'Content-Type': 'application/json',
             Accept: 'application/json',
-            Authorization: `Bearer ${token.value}`,
+            authorization: `Bearer ${token.value}`,
           },
           body: JSON.stringify({
             query: question,
@@ -31,6 +31,7 @@ export default class CitynetApi {
             resultDetailLevel: 9,
             rows: 3,
           }),
+          redirect: 'follow',
         },
       );
       const json = await res.json();
@@ -60,10 +61,11 @@ export default class CitynetApi {
           method: 'POST',
           body: params,
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          redirect: 'follow',
         },
       );
       const token = {
-        value: headers.get('Authorization').split('Bearer ')[1],
+        value: headers.get('authorization').split('Bearer ')[1],
         date: headers.get('date'),
       };
       return token;
@@ -77,7 +79,7 @@ export default class CitynetApi {
     const token = await this.login(options);
     const headers = await nodeFetch(resourceUri, {
       headers: {
-        Authorization: `Bearer ${token.value}`,
+        authorization: `Bearer ${token.value}`,
         Accept: 'application/octet-stream',
       },
     }).then(res => res.headers);
@@ -90,7 +92,7 @@ export default class CitynetApi {
     const dlOptions: download.DownloadOptions = {
       filename: trimmedFileName,
       headers: {
-        Authorization: `Bearer ${token.value}`,
+        authorization: `Bearer ${token.value}`,
         Accept: 'application/octet-stream',
       },
     };
