@@ -199,6 +199,14 @@ function createOptions(pageId: string): IOptions {
         citynet_login: process.env.CITYNET_LOGIN_DEERLIJK,
         citynet_password: process.env.CITYNET_PASSWORD_DEERLIJK,
       };
+    case '108592710494457':
+      return {
+        cardUrl:
+          'https://nbocdn.akamaized.net/Assets/Images_Upload/2015/10/13/aa029f17-4f79-4596-915f-923d3ca34dc6_original.jpg',
+        city: 'zele',
+        citynet_login: process.env.CITYNET_LOGIN_ZELE,
+        citynet_password: process.env.CITYNET_PASSWORD_ZELE,
+      };
     default:
       return createOptions('304854067077825'); // Gent
     // return createOptions('2365819600357103'); // Wingene
