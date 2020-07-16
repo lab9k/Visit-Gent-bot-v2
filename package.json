@@ -23,7 +23,7 @@
     "download": "^7.1.0",
     "flatted": "^2.0.1",
     "form-data": "^2.4.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "moment": "^2.24.0",
     "node-fetch": "^2.6.0",
     "replace": "^1.1.0",
