@@ -30,6 +30,7 @@ export default class CitynetApi {
             targetDocumentType: 'citynet',
             resultDetailLevel: 9,
             rows: 3,
+            inputLanguage: 'nl'
           }),
           redirect: 'follow',
         },
